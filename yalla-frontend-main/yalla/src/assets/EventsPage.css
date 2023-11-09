@@ -1,0 +1,53 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+   display: grid;
+   background: #f5f5f5;
+   min-height: 100vh;
+}
+
+.phlame-logo {
+   width: 72px;
+   height: 72px;
+}
+
+#NGOHome-main-container {
+   place-items: left;
+   width: 600px;
+   top: 20px;
+   left: 20px;
+   padding: 20px;
+   display: inline-block;
+}
+
+#NGOHome-status {
+   place-items: center center; 
+}
+
+#sign-in-form {
+   max-width: 330px;
+}
+
+.form-control:focus {
+   z-index: 5;
+}
+#position-relative {
+        top: 20px;
+        left: 20px;
+        padding: 20px;
+        border: 1px solid blue;
+        display: inline-block;
+        background: #E3F2FD;
+}
+#position-relativeUp {
+   top: 20px;
+   left: 20px;
+   padding: 20px;
+   width: 500px; 
+   border: 1px solid blue;
+   display: inline-block;
+   background: #E3F2FD;
+}
+#NGOHome-upcoming {
+   top: 500px; 
+}

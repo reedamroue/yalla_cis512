@@ -1,0 +1,121 @@
+.event {
+    width: 50%;
+    height: 300px;
+    overflow:auto;
+    margin-left: 25%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    word-break: break-word;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  }
+  
+  .eventWrapper {
+    padding: 10px;
+  }
+  
+  .eventTop {
+    display: flex;
+    align-items: center;
+  }
+
+  .date-event-picture {
+      display: flex;
+      float: left;
+      align-items:center;
+  }
+
+  .date-event {
+    display: flex;
+    float:left;
+    margin-left: 5px;
+    align-items:center;
+}
+
+.component-wrapper {
+    display: flex;
+    float:none;
+}
+
+.more-info-button {
+    display: flex;
+    float:left;
+    margin-left: 60%;
+}
+
+.title {
+    display: flex;
+    margin-left: 32%;
+}
+
+.description {
+    display: flex;
+    max-width: 100ch;
+    word-wrap:break-word;
+    float: none;
+}
+
+.descrip-title {
+    color: #0275d8;
+}
+  
+  /*.shareProfileImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .shareInput {
+    border: none;
+    width: 80%;
+  }
+  
+  .shareInput:focus {
+    outline: none;
+  }
+  
+  .shareHr {
+    margin: 20px;
+  }
+  
+  .shareBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .shareOptions{
+      display: flex;
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+  
+  .shareOption{
+      display: flex;
+      align-items: center;
+      margin-right: 15px;
+      cursor: pointer;
+  }
+  
+  .shareIcon{
+      font-size: 18px;
+      margin-right: 3px;
+  }
+  
+  .shareOptionText{
+      font-size: 14px;
+      font-weight: 500;
+  }
+  
+  .shareButton{
+      border: none;
+      padding: 7px;
+      border-radius: 5px;
+      background-color: gold;
+      font-weight: 500;
+      margin-right: 20px;
+      cursor: pointer;
+      color: black;
+  }*/

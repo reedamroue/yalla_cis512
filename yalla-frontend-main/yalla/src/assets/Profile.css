@@ -1,0 +1,162 @@
+
+  .anaWrapper {
+    margin-left: 42%;
+    align-items: center;
+    float: none;
+  }
+
+  .overflow {
+    width: 100%;
+    height: 300px;
+      overflow: auto;
+  }
+  
+  .eventTop {
+    display: flex;
+    align-items: center;
+  }
+
+  .date-event-picture {
+      display: flex;
+      float: left;
+      align-items:center;
+  }
+
+  .date-event {
+    display: flex;
+    float:left;
+    margin-left: 5px;
+    align-items:center;
+}
+
+.component-wrapper {
+    display: flex;
+    float:none;
+}
+
+.more-info-button {
+    display: flex;
+    float:left;
+    margin-left: 60%;
+}
+
+.title {
+    display: flex;
+    margin-left: 32%;
+}
+
+.description {
+    display: flex;
+    max-width: 100ch;
+    word-wrap:break-word;
+    float: none;
+}
+
+.descrip-title-ana {
+    margin-top: 2%;
+    margin-left: 3%;
+    position:relative;
+    color: #0275d8;
+}
+
+.margin-comment {
+  margin-bottom: 2%;
+  position:relative;
+}
+
+.descrip-title-phone {
+    position:relative;
+    color: #0275d8;
+}
+
+.descrip-title-ana-com {
+    margin-top: 2%;
+    margin-left: -1%;
+    position:relative;
+    color: #0275d8;
+}
+
+.subtitle-ana {
+    margin-left: -15%;
+    position:relative;
+    margin-bottom: 8%;
+}
+
+.number-ana {
+    margin-left: 10%;
+    position:relative;
+    color:red;
+}
+
+.number-ana-rank {
+    margin-left: 12%;
+    position:relative;
+    color:red;
+}
+
+.subtitle-ana-com {
+    margin-left: -18%;
+    position:relative;
+    margin-bottom: 8%;
+}
+  
+  /*.shareProfileImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .shareInput {
+    border: none;
+    width: 80%;
+  }
+  
+  .shareInput:focus {
+    outline: none;
+  }
+  
+  .shareHr {
+    margin: 20px;
+  }
+  
+  .shareBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .shareOptions{
+      display: flex;
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+  
+  .shareOption{
+      display: flex;
+      align-items: center;
+      margin-right: 15px;
+      cursor: pointer;
+  }
+  
+  .shareIcon{
+      font-size: 18px;
+      margin-right: 3px;
+  }
+  
+  .shareOptionText{
+      font-size: 14px;
+      font-weight: 500;
+  }
+  
+  .shareButton{
+      border: none;
+      padding: 7px;
+      border-radius: 5px;
+      background-color: gold;
+      font-weight: 500;
+      margin-right: 20px;
+      cursor: pointer;
+      color: black;
+  }*/
