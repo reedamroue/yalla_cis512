@@ -20,6 +20,7 @@ export default function LeaderboardProfiles({ Leaderboard }) {
   )
 }
 
+
 function Item(data) {
     return (
 

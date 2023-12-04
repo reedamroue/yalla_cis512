@@ -82,7 +82,15 @@ export default function Event({event_id, username, name, date, location, start_t
                 <h5>{start_time}</h5>
             </div>  
             <div className="more-info-button">
-                <Button className= { amgoing ? "btn btn-success" : "btn btn-primary"} onClick={toggleGoing}>{amgoing ? "Registered" : "Register"}</Button>
+                {/* <Button className= { amgoing ? "btn btn-success" : "btn btn-primary"} onClick={toggleGoing}>{amgoing ? "Registered" : "Register"}</Button> */}
+                <Button 
+                className={`btn ${amgoing ? "btn-success" : "btn-primary"} rounded-circle`} 
+                onClick={toggleGoing}
+                style={{ width: '50px', height: '50px', padding: 0, lineHeight: '50px' }}
+                >
+                {amgoing ? "✓" : "+"}
+                </Button>
+
             </div>     
         </div> 
 

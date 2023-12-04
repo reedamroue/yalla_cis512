@@ -131,29 +131,28 @@ export default function Share({username}) {
         }
     }
     return (
-        <div className="share">
+        <div className="share bg-white p-4 rounded-lg shadow-md">
             <div className="shareWrapper">
-                <div className="shareTop">
-                    <img className="shareProfileImg" src="https://media.istockphoto.com/photos/volunteers-standing-hands-picture-id1303107115?b=1&k=20&m=1303107115&s=170667a&w=0&h=Qy0CzAqe8H_wDTiE7-r6jMqfvNdt_HzK1Z9HDLETRrQ=" alt="" />
-                    <input placeholder="Share your last event!" className="shareInput"
+                <div className="shareTop flex items-center space-x-2">
+                    <img className="shareProfileImg rounded-full" src="https://media.istockphoto.com/photos/volunteers-standing-hands-picture-id1303107115?b=1&k=20&m=1303107115&s=170667a&w=0&h=Qy0CzAqe8H_wDTiE7-r6jMqfvNdt_HzK1Z9HDLETRrQ=" alt="" />
+                    <input placeholder="Share your last event!" className="shareInput flex-1"
                     onChange={e => 
                         {setMessage(e.target.value)
                         }
                     }/>
                 </div>
-                <hr className="shareHr"/>
-                <div className="shareBottom">
-                    <div className="shareOptions">
-                        <Event htmlColor="blue" className="shareIcon"
-                        onMouseOver={updateEvents}/>
-                        <span className="shareOptionText" onMouseOver={updateEvents}>Event</span>
-                        <Select options={options} 
-                        onChange={e => setEventId(e.value)}/>
-                    </div>
-                    <Button variant="primary" className="shareButton" onClick={addPost}>Share</Button>
+                <hr className="shareHr my-2"/>
+                <div className="shareBottom flex justify-between items-center">
+                <div className="flex items-center justify-center space-x-2"> 
+  <Event htmlColor="blue" className="shareIcon" onMouseOver={updateEvents}/>
+  <span className="shareOptionText" onMouseOver={updateEvents}>Event</span>
+  <Select options={options} onChange={e => setEventId(e.value)}/>
+</div>
+
+                    <Button variant="primary" className="shareButton bg-blue-500 text-white rounded px-4 py-2" onClick={addPost}>Share</Button>
                 </div>               
             </div>
         </div>
-        
+
       )
 }

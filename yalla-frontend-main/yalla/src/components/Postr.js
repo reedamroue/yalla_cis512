@@ -159,11 +159,11 @@ function Postr({numberLikes, timestamp, message, username, comments_list, usersW
             <Comments comments={comments}></Comments>
             <div className="flex-line">
                 <Input
-                    placeholder="Add a Comment..."
+                    placeholder="Comment..."
                     value={newComment}
                     onChange={(e) => setNewComment(e.target.value)}
                 ></Input>
-                <Button
+                <Button 
                     onClick={() => {
                         if (newComment == "") {
                             const confirmDia = () => {
@@ -185,7 +185,7 @@ function Postr({numberLikes, timestamp, message, username, comments_list, usersW
                         }
                     }}
                 >
-                    Post Comment
+                    {">"}
                 </Button>
             </div>
             <div className="flex-line space-x-4">
