@@ -13,7 +13,7 @@ import {Button} from "react-bootstrap";
 //import ListItemButton from '@mui/material/ListItemButton';
 //import ListItemText from '@mui/material/ListItemText';
 
-const socket = io.connect("https://phlame-chat.herokuapp.com")
+const socket = io.connect("http://localhost:3010")
 function Chat({usern}) {
     const [showChat, setShowChat] = useState(false)
     const username = usern;

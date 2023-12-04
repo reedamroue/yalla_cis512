@@ -1,0 +1,25 @@
+{
+    "name": "phlame",
+    "version": "1.0.0",
+    "description": "phlame",
+    "main": "app.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "async": "^3.2.2",
+        "cors": "^2.8.5",
+        "ejs": "^3.1.6",
+        "express": "^4.18.1",
+        "express-session": "^1.17.2",
+        "lru-cache": "^6.0.0",
+        "sha.js": "^2.4.11",
+        "socket.io": "^4.5.0",
+        "uuid": "^8.3.2"
+    },
+    "engines": {
+        "node": "16.x"
+      },
+    "author": "",
+    "license": "ISC"
+}

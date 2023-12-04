@@ -137,6 +137,32 @@ body {
 }
 
 #you .message-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#other .message-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#other .message-content {
+  background-color: cornflowerblue;
+}
+
+.message-meta #author {
+  font-weight: bold;
+}
+
+.chat-window .chat-body .message .message-meta {
+  display: flex;
+  font-size: 12px;
+}
+
+/* 
+#you .message-meta {
   justify-content: flex-start;
   margin-left: 5px;
 }
@@ -163,7 +189,7 @@ body {
 .chat-window .chat-body .message .message-meta {
   display: flex;
   font-size: 12px;
-}
+} */
 
 .chat-window .chat-footer {
   height: 40px;

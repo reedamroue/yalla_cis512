@@ -82,7 +82,7 @@ export default function Event({event_id, username, name, date, location, start_t
                 <h5>{start_time}</h5>
             </div>  
             <div className="more-info-button">
-                <Button className= { amgoing ? "btn btn-success" : "btn btn-primary"} onClick={toggleGoing}>{amgoing ? "Registered" : "Go!"}</Button>
+                <Button className= { amgoing ? "btn btn-success" : "btn btn-primary"} onClick={toggleGoing}>{amgoing ? "Registered" : "Register"}</Button>
             </div>     
         </div> 
 

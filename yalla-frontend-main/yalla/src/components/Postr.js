@@ -159,7 +159,7 @@ function Postr({numberLikes, timestamp, message, username, comments_list, usersW
             <Comments comments={comments}></Comments>
             <div className="flex-line">
                 <Input
-                    placeholder="Add a comment..."
+                    placeholder="Add a Comment..."
                     value={newComment}
                     onChange={(e) => setNewComment(e.target.value)}
                 ></Input>
@@ -185,7 +185,7 @@ function Postr({numberLikes, timestamp, message, username, comments_list, usersW
                         }
                     }}
                 >
-                    Post comment
+                    Post Comment
                 </Button>
             </div>
             <div className="flex-line space-x-4">

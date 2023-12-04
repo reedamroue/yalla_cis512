@@ -172,9 +172,9 @@ function Message({ socket, username, room, onlineUsers }) {
         })
     }, [socket])
     return (
-        <div className="chat-window">
-            <div>
-                <button
+    <div className="chat-window">
+    <div className="chat-header">
+    <button
                     //cssModule={AwesomeButtonStyles}
                     type="button" 
                     class="btn btn-danger"
@@ -185,62 +185,115 @@ function Message({ socket, username, room, onlineUsers }) {
                 >
                     &#9587;
                 </button>
-            </div>
-            <div className="chat-header">
-                <p>Live Chat</p>
-            </div>
-            <div className="chat-body">
-                <ScrollToBottom className="w-full h-full overflow-y-auto overflow-x-hidden">
-                    {messageList.map((content) => {
-                        // console.log(username)
-                        return (
-                            <div
-                                className="message"
-                                id={username === content.username ? "other" : "you"}
-                            >
-                                <div
-                                    className="message-content"
-                                >
-                                    <p>{content.message}</p>
-                                </div>
-                                <div className="message-meta">
-                                    <p className="text-xs text-gray-500">
-                                        {new Date(content.timestamp).toLocaleTimeString() + "\n"}
-                                    </p>
-                                    <p className="text-xs text-gray-500">{content.username}</p>
-                                </div>
-                            </div>
-                        )
-                    })}
-                </ScrollToBottom>
-            </div>
-            <div className="chat-footer">
-                <div className="flex-grow">
-                    <input
-                        type="text"
-                        placeholder="Hey..."
-                        value={currentMessage}
-                        onChange={(event) => {
-                            setCurrentMessage(event.target.value)
-                        }}
-                        onEnter={sendMessage}
-                    />
+        <p>Live Chat</p>
+    </div>
+    <ScrollToBottom className="chat-body">
+        {messageList.map((content, index) => (
+            <div
+                key={index}
+                className={`message ${username === content.username ? "sent" : "received"}`}
+            >
+                <div className="message-content">
+                    <p>{content.message}</p>
                 </div>
-                <button className="w-12" onClick={sendMessage}>
-                    &#9658;
-                </button>
-            </div>
-            <div>
-                <h4>Chat Members:</h4>
-                <div>
-                    <h4>
-                        {users.map((user) => (
-                            <div>{user}</div>
-                        ))}
-                    </h4>
+                <div className="message-meta text-right text-xs text-gray-500">
+                    <p>{new Date(content.timestamp).toLocaleTimeString() + '   '}</p>
+                    <p>{content.username}</p>
                 </div>
             </div>
+        ))}
+    </ScrollToBottom>
+    <div className="chat-footer">
+        <input
+            type="text"
+            placeholder="Hey..."
+            value={currentMessage}
+            onChange={(event) => setCurrentMessage(event.target.value)}
+            onKeyPress={(event) => event.key === 'Enter' && sendMessage()}
+        />
+        <button className="send-button" onClick={sendMessage}>
+            ►
+        </button>
+    </div>
+    <div className="chat-members">
+        <h4>Chat Members:</h4>
+        <div>
+            {users.map((user, index) => (
+                <div key={index}>{user}</div>
+            ))}
         </div>
+    </div>
+</div>
+
+        // <div className="chat-window">
+        //     <div>
+        //         <button
+        //             //cssModule={AwesomeButtonStyles}
+        //             type="button" 
+        //             class="btn btn-danger"
+        //             onClick={() => {
+        //                 console.log("disconnecting")
+        //                 disconnectUser()
+        //             }}
+        //         >
+        //             &#9587;
+        //         </button>
+        //     </div>
+        //     <div className="chat-header">
+        //         <p>Live Chat</p>
+        //     </div>
+        //     <div className="chat-body">
+        //         <ScrollToBottom className="w-full h-full overflow-y-auto overflow-x-hidden">
+        //             {messageList.map((content) => {
+        //                 // console.log(username)
+        //                 return (
+        //                     <div
+        //                         className="message"
+        //                         id={username === content.username ? "other" : "you"}
+        //                     >
+        //                         <div
+        //                             className="message-content"
+        //                         >
+        //                             <p>{content.message}</p>
+        //                         </div>
+        //                         <div className="message-meta">
+        //                             <p className="text-xs text-gray-500">
+        //                                 {new Date(content.timestamp).toLocaleTimeString() + "\n"}
+        //                             </p>
+        //                             <p className="text-xs text-gray-500">{content.username}</p>
+        //                         </div>
+        //                     </div>
+        //                 )
+        //             })}
+        //         </ScrollToBottom>
+        //     </div>
+        //     <div className="chat-footer">
+        //         <div className="flex-grow">
+        //             <input
+        //                 type="text"
+        //                 placeholder="Hey..."
+        //                 value={currentMessage}
+        //                 onChange={(event) => {
+        //                     setCurrentMessage(event.target.value)
+        //                 }}
+        //                 onEnter={sendMessage}
+        //             />
+        //         </div>
+        //         <button className="w-12" onClick={sendMessage}>
+        //             &#9658;
+        //         </button>
+        //     </div>
+        //     <div>
+        //         <h4>Chat Members:</h4>
+        //         <div>
+        //             <h4>
+        //                 {users.map((user) => (
+        //                     <div>{user}</div>
+        //                 ))}
+        //             </h4>
+        //         </div>
+        //     </div>
+        // </div>
     )
 }
 export default Message

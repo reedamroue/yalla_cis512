@@ -63,9 +63,9 @@ function UserHome({username}) {
                     <li className="nav-item">
                         <a className="nav-link" onClick={goLeaderboard}>Leaderboard</a>
                     </li>
-                    {/* <li className="nav-item">
+                    <li className="nav-item">
                         <a className="nav-link" onClick={goChat}>Chat</a>
-                    </li> */}
+                    </li>
                     <li className="nav-item">
                         <a className="nav-link" onClick={goProfile}>Profile</a>
                     </li>
@@ -98,9 +98,9 @@ function UserHome({username}) {
                     <li className="nav-item">
                         <a className="nav-link" onClick={goLeaderboard}>Leaderboard</a>
                     </li>
-                    {/* <li className="nav-item">
+                    <li className="nav-item">
                         <a className="nav-link" onClick={goChat}>Chat</a>
-                    </li> */}
+                    </li>
                     <li className="nav-item">
                         <a className="nav-link" onClick={goProfile}>Profile</a>
                     </li>
@@ -133,9 +133,9 @@ function UserHome({username}) {
                     <li className="nav-item">
                         <a className="nav-link active" onClick={goLeaderboard}>Leaderboard</a>
                     </li>
-                    {/* <li className="nav-item">
+                    <li className="nav-item">
                         <a className="nav-link" onClick={goChat}>Chat</a>
-                    </li> */}
+                    </li>
                     <li className="nav-item">
                         <a className="nav-link" onClick={goProfile}>Profile</a>
                     </li>
@@ -168,9 +168,9 @@ function UserHome({username}) {
                     <li className="nav-item">
                         <a className="nav-link" onClick={goLeaderboard}>Leaderboard</a>
                     </li>
-                    {/* <li className="nav-item">
+                    <li className="nav-item">
                         <a className="nav-link" onClick={goChat}>Chat</a>
-                    </li> */}
+                    </li>
                     <li className="nav-item">
                         <a className="nav-link active" onClick={goProfile}>Profile</a>
                     </li>
@@ -202,9 +202,9 @@ function UserHome({username}) {
                     <li className="nav-item">
                         <a className="nav-link" onClick={goLeaderboard}>Leaderboard</a>
                     </li>
-                    {/* <li className="nav-item">
+                    <li className="nav-item">
                         <a className="nav-link active" onClick={goChat}>Chat</a>
-                    </li> */}
+                    </li>
                     <li className="nav-item">
                         <a className="nav-link" onClick={goProfile}>Profile</a>
                     </li>
