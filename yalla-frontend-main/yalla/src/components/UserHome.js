@@ -48,7 +48,7 @@ function UserHome({username}) {
         return(
             <div>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a className="navbar-brand font-weight-bold" href="#"><h2>Yalla</h2></a>
+                <a className="navbar-brand font-weight-bold" href="#" style={{ marginLeft: '10px' }}><h2>Yalla</h2></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -83,7 +83,7 @@ function UserHome({username}) {
         return(
             <div>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a className="navbar-brand font-weight-bold" href="#"><h2>Yalla</h2></a>
+                <a className="navbar-brand font-weight-bold" href="#" style={{ marginLeft: '10px' }}><h2>Yalla</h2></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -118,7 +118,7 @@ function UserHome({username}) {
         return(
             <div>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a className="navbar-brand font-weight-bold" href="#"><h2>Yalla</h2></a>
+                <a className="navbar-brand font-weight-bold" href="#" style={{ marginLeft: '10px' }}><h2>Yalla</h2></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -153,7 +153,7 @@ function UserHome({username}) {
         return(
             <div>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a className="navbar-brand font-weight-bold" href="#"><h2>Yalla</h2></a>
+                <a className="navbar-brand font-weight-bold" href="#" style={{ marginLeft: '10px' }}><h2>Yalla</h2></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -187,7 +187,7 @@ function UserHome({username}) {
         return(
             <div>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a className="navbar-brand font-weight-bold" href="#"><h2>Yalla</h2></a>
+                <a className="navbar-brand font-weight-bold" href="#" style={{ marginLeft: '10px' }}><h2>Yalla</h2></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

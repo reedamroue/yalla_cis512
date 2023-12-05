@@ -117,7 +117,7 @@ export default function AddFriend({currUser}) {
             onChange={e => setFriend(e.value)}
             onMouseOver={updatePeople}/>
         </div>
-        <Button variant="primary" className="shareButton"
+        <Button variant="primary" className="shareButton text-white"
         onClick={addFriend}
         onMouseOver={updatePeople}>Add!</Button>
     </div>
