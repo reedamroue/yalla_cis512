@@ -249,7 +249,7 @@ function App() {
         <h1 className='mb-3 fs 3'>Welcome Back!</h1>
         <Form.Group controlId='sign-in-email'><Form.Control type="username" size="1g" placeholder="Username" autoComplete='username' className='position-relative'
         onChange={e => setUsername(e.target.value)}></Form.Control></Form.Group>
-        <Form.Group controlId='sign-in-password' className='mb-3'><Form.Control type="password" size="1g" placeholder="Password" autoComplete='current-password' className='position-relative'
+        <Form.Group controlId='sign-in-password' className='mb-3'><Form.Control type="password" size="1g" placeholder="Password" autoComplete='current-password' className='position-relative' style={{ marginTop: '5px' }}
         onChange={e => setPassword(e.target.value)}></Form.Control></Form.Group>
         <Form.Group controlId='sign-in-check' className=" mb-4 d-flex justify-content-center">
           <Form.Check label="Remember Me"></Form.Check>
@@ -270,7 +270,7 @@ function App() {
             <h1 className='mb-3 fs 3'>Welcome Back!</h1>
             <Form.Group controlId='sign-in-email'><Form.Control type="username" size="1g" placeholder="Username" autoComplete='username' className='position-relative'
             onChange={e => setUsername(e.target.value)}></Form.Control></Form.Group>
-            <Form.Group controlId='sign-in-password' className='mb-3'><Form.Control type="password" size="1g" placeholder="Password" autoComplete='current-password' className='position-relative'
+            <Form.Group controlId='sign-in-password' className='mb-3' style={{ marginTop: '5px' }}><Form.Control type="password" size="1g" placeholder="Password" autoComplete='current-password' className='position-relative'
             onChange={e => setPassword(e.target.value)}></Form.Control></Form.Group>
             <Form.Group controlId='sign-in-check' className=" mb-4 d-flex justify-content-center">
               <Form.Check label="Remember Me"></Form.Check>
@@ -311,7 +311,7 @@ function App() {
             <h1 className='mb-3 fs 3'>Welcome Back!</h1>
             <Form.Group controlId='sign-in-email'><Form.Control type="username" size="1g" placeholder="Username" autoComplete='username' className='position-relative'
             onChange={e => setUsername(e.target.value)}></Form.Control></Form.Group>
-            <Form.Group controlId='sign-in-password' className='mb-3'><Form.Control type="password" size="1g" placeholder="Password" autoComplete='current-password' className='position-relative'
+            <Form.Group controlId='sign-in-password' className='mb-3'><Form.Control type="password" size="1g" placeholder="Password" autoComplete='current-password' className='position-relative' style={{ marginTop: '5px' }}
             onChange={e => setPassword(e.target.value)}></Form.Control></Form.Group>
             <Form.Group controlId='sign-in-check' className=" mb-4 d-flex justify-content-center">
               <Form.Check label="Remember Me"></Form.Check>
@@ -331,7 +331,7 @@ function App() {
             <h1 className='mb-3 fs 3'>Welcome Back!</h1>
             <Form.Group controlId='sign-in-email'><Form.Control type="username" size="1g" placeholder="Username" autoComplete='username' className='position-relative'
             onChange={e => setUsername(e.target.value)}></Form.Control></Form.Group>
-            <Form.Group controlId='sign-in-password' className='mb-3'><Form.Control type="password" size="1g" placeholder="Password" autoComplete='current-password' className='position-relative'
+            <Form.Group controlId='sign-in-password' className='mb-3'><Form.Control type="password" size="1g" placeholder="Password" autoComplete='current-password' className='position-relative' style={{ marginTop: '5px' }}
             onChange={e => setPassword(e.target.value)}></Form.Control></Form.Group>
             <Form.Group controlId='sign-in-check' className=" mb-4 d-flex justify-content-center">
               <Form.Check label="Remember Me"></Form.Check>

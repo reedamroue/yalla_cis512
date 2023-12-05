@@ -42,7 +42,7 @@ function Sidebar({username}) {
     return (
         <div className="sidebar">
             <div className="sidebarWrapper"></div>
-            <ul className="sidebarList">
+            <ul className="sidebarList" style={{ marginTop: '-20px' }}>
                 <li className="sidebarListItem" key="1">
                     <RssFeed htmlColor="purple" className="sidebarIcon"/>
                     <span className="sidebarListItemText">Feed</span>
@@ -63,8 +63,8 @@ function Sidebar({username}) {
                 {!isNGO ? <AddFriend currUser={username}/> : <div></div>}
                 </li>
             </ul>
-            <h3>Friends</h3>
-            <hr className="sidebarHr"/>
+            <h3 style={{ marginTop: '20px' }}>Friends</h3>
+            <hr className="sidebarHr" style={{ marginTop: '-8px' }}/>
             <ul className="sidebarFriendList">
             {friends.map((friend) => (
                 friend[0] != null ? 

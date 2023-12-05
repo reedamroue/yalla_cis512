@@ -79,7 +79,7 @@ export default function CreateEvent({username}) {
         <>
         <div class = "row">
         <div className="col-xs-6">
-        <Container id="NGOHome-main-container">
+        <Container id="NGOHome-main-container" style={{ marginLeft: '28%' }}>
         <Form id = "position-relative">
         <h4>Create New Event Posting</h4>
   <Row className="mb-0.5">

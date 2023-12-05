@@ -118,7 +118,7 @@ export default function AddFriend({currUser}) {
             onMouseOver={updatePeople}/>
         </div>
         <Button variant="primary" className="shareButton text-white"
-        onClick={addFriend}
+        onClick={addFriend} style={{ marginTop: '5px' }}
         onMouseOver={updatePeople}>Add!</Button>
     </div>
   )
