@@ -21,7 +21,7 @@ export default function EventsPage({username}) {
       refresh()
   }, [])
   return (
-    <div>
+    <div  style={{ paddingTop: '70px' }}>
         <Container>
             <h1 className="title">Upcoming Events</h1>
             <ul id="events"></ul>

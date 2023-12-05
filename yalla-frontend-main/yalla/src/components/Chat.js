@@ -231,7 +231,7 @@ function Chat({usern}) {
     let shown
     if (!showChat) {
         shown = (
-            <div className="flex-center">
+            <div className="flex-center" >
                 <h1 className="text-xl">Main Room</h1>
                 <div className="flex-line space-x-4">
                     <div>

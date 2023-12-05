@@ -143,8 +143,18 @@ function Postr({numberLikes, timestamp, message, username, comments_list, usersW
 
     return (
         <div className="post max-w-100 w-full p-4 bg-white rounded-xl">
-            <h2 className="descrip-title">{username}</h2>
-            <div className="font-light text-sm">{formatTimestamp(timestamp)}</div>
+<div className="shareTop flex items-center space-x-2">
+    {username && username.length > 0 && (
+        <img className="shareProfileImg rounded-full" src="https://media.istockphoto.com/photos/volunteers-standing-hands-picture-id1303107115?b=1&k=20&m=1303107115&s=170667a&w=0&h=Qy0CzAqe8H_wDTiE7-r6jMqfvNdt_HzK1Z9HDLETRrQ=" alt="" />
+    )}
+
+    <div className="flex flex-col justify-center" style={{ gap: '0.25rem' }}> {/* Adjust the gap here */}
+        <h2 className="descrip-title" style={{ marginBottom: '0rem' }}>{username}</h2> {/* Reduce bottom margin */}
+        <div className="font-light text-sm" style={{ marginTop: '-2px' }}>{formatTimestamp(timestamp)}</div> {/* Reduce top margin */}
+    </div>
+</div>
+
+
             <div><h2>{message}</h2></div>
             {event[0] != null ? 
             
@@ -157,6 +167,7 @@ function Postr({numberLikes, timestamp, message, username, comments_list, usersW
                   going={event[0].attendees.includes(curr_user)}/> : 
                   <div></div>}
             <Comments comments={comments}></Comments>
+            <hr/>
             <div className="flex-line">
                 <Input
                     placeholder="Comment..."

@@ -34,7 +34,7 @@ const NGOProfile = ({username}) => {
     })
 
     return (
-        <div>
+        <div  style={{ paddingTop: '70px' }}>
             <div style={{
                 display: "flex",
                 margin: "15px 15px"

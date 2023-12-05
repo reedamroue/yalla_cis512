@@ -175,6 +175,7 @@ function Message({ socket, username, room, onlineUsers }) {
     <div className="chat-window">
     <div className="chat-header">
     <button
+                    style={{ marginTop: '3px', marginLeft: '-95%' }}
                     //cssModule={AwesomeButtonStyles}
                     type="button" 
                     class="btn btn-danger"

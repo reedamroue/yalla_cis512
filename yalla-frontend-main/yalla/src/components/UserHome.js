@@ -47,7 +47,13 @@ function UserHome({username}) {
     if (page === HOME) {
         return(
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+                <nav className="navbar navbar-expand-lg navbar-dark bg-primary" style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            zIndex: 1000
+        }}>
                 <a className="navbar-brand font-weight-bold" href="#" style={{ marginLeft: '10px' }}><h2>Yalla</h2></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -74,6 +80,7 @@ function UserHome({username}) {
                     <Button className="btn btn-danger" type="button" onClick={goLogin}>LogOut</Button>
                 </div>
                 </nav>
+
                 <Home username={usernamelogged.current}/>
             </div>
         )
@@ -82,7 +89,13 @@ function UserHome({username}) {
     if (page === EVENTS) {
         return(
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+                <nav className="navbar navbar-expand-lg navbar-dark bg-primary" style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            zIndex: 1000
+        }}>
                 <a className="navbar-brand font-weight-bold" href="#" style={{ marginLeft: '10px' }}><h2>Yalla</h2></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -117,7 +130,13 @@ function UserHome({username}) {
     if (page === LEADERBOARD) {
         return(
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+                <nav className="navbar navbar-expand-lg navbar-dark bg-primary" style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            zIndex: 1000
+        }}>
                 <a className="navbar-brand font-weight-bold" href="#" style={{ marginLeft: '10px' }}><h2>Yalla</h2></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -152,7 +171,13 @@ function UserHome({username}) {
     if (page === PROFILE) {
         return(
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+                <nav className="navbar navbar-expand-lg navbar-dark bg-primary" style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            zIndex: 1000
+        }}>
                 <a className="navbar-brand font-weight-bold" href="#" style={{ marginLeft: '10px' }}><h2>Yalla</h2></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -186,7 +211,13 @@ function UserHome({username}) {
     if (page === CHAT) {
         return(
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+                <nav className="navbar navbar-expand-lg navbar-dark bg-primary" style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            zIndex: 1000
+        }}>
                 <a className="navbar-brand font-weight-bold" href="#" style={{ marginLeft: '10px' }}><h2>Yalla</h2></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

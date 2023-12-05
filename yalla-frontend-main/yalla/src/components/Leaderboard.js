@@ -58,7 +58,7 @@ export default function Leaderboard() {
   }
 
   return (
-    <div className="board">
+    <div className="board" style={{ paddingTop: '70px' }}>
         <h1 className='leaderboard'>Leaderboard</h1>
 
         <div className="duration">

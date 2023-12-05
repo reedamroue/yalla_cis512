@@ -28,7 +28,7 @@ function Input({ validator, label, onEnter, ...rest }) {
         }
     }
     return (
-        <div className="m-px w-full">
+        <div className="m-px w-full" style={{ width: '100%' }}>
             {label && <label className="text-xs text-gray-500 ml-2 leading-1">{label}</label>}
             <input
                 ref={ref}
@@ -36,6 +36,7 @@ function Input({ validator, label, onEnter, ...rest }) {
                     isGoodInput ? "border-2 border-green-500" : ""
                 }  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
                 onBlur={() => testInput()}
+                style={{ width: '100%' }}
                 onKeyDown={(e) => checkEnter(e)}
                 {...rest}
             ></input>
