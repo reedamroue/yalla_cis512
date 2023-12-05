@@ -2,6 +2,7 @@ import { React, useRef, useState } from 'react';
 // import '../assets/Profile.css';
 import {Button, Col, Container, Form, Row, DropdownButton, MenuItem, Dropdown } from "react-bootstrap";
 import NGOHome from './NGOHome'
+import yalla_logo from '../assets/yalla_logo.png';
 
 //const SERVER_URL = "https://phlame-back.herokuapp.com"
 const SERVER_URL = "http://localhost:5001"
@@ -58,10 +59,10 @@ export default function NGORegisterProfile() {
       return (
         <Container id="login-main-container" className="d-grid h-100">
         <Form id="sign-in-form" className="text-center w-100">
-        <h1 className='mb-3 fs 3'>Phlame</h1>
-          <img className="mb-4 phlame-logo" 
-                src="https://www.nicepng.com/png/detail/13-132722_clip-art-logo-design-blue-flame-logo-clip.png" 
-                alt="Bootstrap 5" />
+        <img className="mb-4 phlame-logo" 
+                src={yalla_logo} 
+                alt="Bootstrap 5" 
+                style={{ display: 'block', marginLeft: '-100px'}}/>
           <h1 className='mb-3 fs 3'>NGO Registration</h1>
           <h6 className='mb-3'>Please enter an alphanumeric username and password</h6>
           <Form.Group controlId='sign-in-user'><Form.Control type="username" size="1g" placeholder="Username" autoComplete='username' className='position-relative'

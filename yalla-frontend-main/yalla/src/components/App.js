@@ -8,6 +8,7 @@ import NGORegisterProfile from './NGORegisterProfile';
 import { confirmAlert } from "react-confirm-alert"
 import "react-confirm-alert/src/react-confirm-alert.css"
 import Warning from './Warning';
+import yalla_logo from '../assets/yalla_logo.png';
 //import { getUserEvents } from '../../../server/dbOperations';
 // Pages accessible from this start page
 
@@ -157,10 +158,10 @@ function App() {
     return (
       <Container id="login-main-container" className="d-grid h-100">
         <Form id="sign-in-form" className="text-center w-100">
-        <h1 className='mb-3 fs 3'>Yalla</h1>
           <img className="mb-4 phlame-logo" 
-                src="https://www.nicepng.com/png/detail/13-132722_clip-art-logo-design-blue-flame-logo-clip.png" 
-                alt="Bootstrap 5" />
+                src={yalla_logo} 
+                alt="Bootstrap 5" 
+                style={{ display: 'block', marginLeft: '-100px'}}/>
           <h5 className='mb-3 fs 3'>The community for community service lovers</h5>
           <div className="mb-3 d-grid"><Button id="logInBtn" onClick={handleSubmit} variant="primary" size="lg">Login</Button></div>
           <div className="mb-3 d-grid"><Button id="registerBtn" variant="primary" size="lg" onClick={handleSubmit}>Register</Button></div>
@@ -180,10 +181,10 @@ function App() {
     return (
       <Container id="login-main-container" className="d-grid h-100">
         <Form id="sign-in-form" className="text-center w-100">
-        <h1 className='mb-3 fs 3'>Yalla</h1>
-          <img className="mb-4 phlame-logo" 
-                src="https://www.nicepng.com/png/detail/13-132722_clip-art-logo-design-blue-flame-logo-clip.png" 
-                alt="Bootstrap 5" />
+        <img className="mb-4 phlame-logo" 
+                src={yalla_logo} 
+                alt="Bootstrap 5" 
+                style={{ display: 'block', marginLeft: '-100px'}}/>
           <h5 className='mb-3 fs 3'>Login as a</h5>
           <div className="mb-3 d-grid"><Button id="logInBtn" onClick={goUserLogin} variant="primary" size="lg">User</Button></div>
           <div className="mb-3 d-grid"><Button id="registerBtn" variant="primary" size="lg" onClick={goNGOLogin}>NGO</Button></div>
@@ -209,10 +210,10 @@ function App() {
     return (
       <Container id="login-main-container" className="d-grid h-100">
         <Form id="sign-in-form" className="text-center w-100">
-        <h1 className='mb-3 fs 3'>Yalla</h1>
-          <img className="mb-4 phlame-logo" 
-                src="https://www.nicepng.com/png/detail/13-132722_clip-art-logo-design-blue-flame-logo-clip.png" 
-                alt="Bootstrap 5" />
+        <img className="mb-4 phlame-logo" 
+                src={yalla_logo} 
+                alt="Bootstrap 5" 
+                style={{ display: 'block', marginLeft: '-100px'}}/>
           <h5 className='mb-3 fs 3'>Register as a </h5>
           <div className="mb-3 d-grid"><Button id="logInBtn" onClick={goUserRegister} variant="primary" size="lg">User</Button></div>
           <div className="mb-3 d-grid"><Button id="registerBtn" variant="primary" size="lg" onClick={goNGORegister}>NGO</Button></div>
@@ -241,10 +242,10 @@ function App() {
       <Container id="login-main-container" className="d-grid h-100">
         <Warning setUnsucc={setUnsucc}/>
       <Form id="sign-in-form" className="text-center w-100">
-      <h1 className='mb-3 fs 3'>Yalla</h1>
-        <img className="mb-4 phlame-logo" 
-              src="https://www.nicepng.com/png/detail/13-132722_clip-art-logo-design-blue-flame-logo-clip.png" 
-              alt="Bootstrap 5" />
+      <img className="mb-4 phlame-logo" 
+                src={yalla_logo} 
+                alt="Bootstrap 5" 
+                style={{ display: 'block', marginLeft: '-100px'}}/>
         <h1 className='mb-3 fs 3'>Welcome Back!</h1>
         <Form.Group controlId='sign-in-email'><Form.Control type="username" size="1g" placeholder="Username" autoComplete='username' className='position-relative'
         onChange={e => setUsername(e.target.value)}></Form.Control></Form.Group>
@@ -262,10 +263,10 @@ function App() {
       return (
         <Container id="login-main-container" className="d-grid h-100">
           <Form id="sign-in-form" className="text-center w-100">
-          <h1 className='mb-3 fs 3'>Yalla</h1>
-            <img className="mb-4 phlame-logo" 
-                  src="https://www.nicepng.com/png/detail/13-132722_clip-art-logo-design-blue-flame-logo-clip.png" 
-                  alt="Bootstrap 5" />
+          <img className="mb-4 phlame-logo" 
+                src={yalla_logo} 
+                alt="Bootstrap 5" 
+                style={{ display: 'block', marginLeft: '-100px'}}/>
             <h1 className='mb-3 fs 3'>Welcome Back!</h1>
             <Form.Group controlId='sign-in-email'><Form.Control type="username" size="1g" placeholder="Username" autoComplete='username' className='position-relative'
             onChange={e => setUsername(e.target.value)}></Form.Control></Form.Group>
@@ -303,10 +304,10 @@ function App() {
         <Container id="login-main-container" className="d-grid h-100">
           <Warning setUnsucc={setUnsucc}/>
           <Form id="sign-in-form" className="text-center w-100">
-          <h1 className='mb-3 fs 3'>Yalla</h1>
-            <img className="mb-4 phlame-logo" 
-                  src="https://www.nicepng.com/png/detail/13-132722_clip-art-logo-design-blue-flame-logo-clip.png" 
-                  alt="Bootstrap 5" />
+          <img className="mb-4 phlame-logo" 
+                src={yalla_logo} 
+                alt="Bootstrap 5" 
+                style={{ display: 'block', marginLeft: '-100px'}}/>
             <h1 className='mb-3 fs 3'>Welcome Back!</h1>
             <Form.Group controlId='sign-in-email'><Form.Control type="username" size="1g" placeholder="Username" autoComplete='username' className='position-relative'
             onChange={e => setUsername(e.target.value)}></Form.Control></Form.Group>
@@ -323,10 +324,10 @@ function App() {
       return (
         <Container id="login-main-container" className="d-grid h-100">
           <Form id="sign-in-form" className="text-center w-100">
-          <h1 className='mb-3 fs 3'>Yalla</h1>
-            <img className="mb-4 phlame-logo" 
-                  src="https://www.nicepng.com/png/detail/13-132722_clip-art-logo-design-blue-flame-logo-clip.png" 
-                  alt="Bootstrap 5" />
+          <img className="mb-4 phlame-logo" 
+                src={yalla_logo} 
+                alt="Bootstrap 5" 
+                style={{ display: 'block', marginLeft: '-100px'}}/>
             <h1 className='mb-3 fs 3'>Welcome Back!</h1>
             <Form.Group controlId='sign-in-email'><Form.Control type="username" size="1g" placeholder="Username" autoComplete='username' className='position-relative'
             onChange={e => setUsername(e.target.value)}></Form.Control></Form.Group>
