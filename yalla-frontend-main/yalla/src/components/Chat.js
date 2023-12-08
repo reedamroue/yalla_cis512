@@ -232,16 +232,17 @@ function Chat({usern}) {
     if (!showChat) {
         shown = (
             <div className="flex-center" >
-                <h1 className="text-xl" style={{fontWeight: 'bold'}}>Main Room</h1>
+                <h1 className="text" style={{fontWeight: 'bold'}}>Chat Room</h1>
                 <div className="flex-line space-x-4">
                     <div>
-                        You are <span className="text-blue-500">{username}</span>
+                        You are <span className="text-green-500">{username}</span>
                     </div>
                     {!isOnline ? (
-                        <Button onClick={joinRoom} style={{backgroundColor: '#EA3EF7' }}>Go Online!</Button>
-                    ) : (
-                        <Button disabled>Already online</Button>
-                    )}
+                <Button onClick={joinRoom} style={{ backgroundColor: '#EA3EF7' }}>Go Online!</Button>
+                ) : (
+                <Button disabled style={{ backgroundColor: '#EA3EF7' }}>Already online</Button>
+                )}
+
                 </div>
                 <h3>Users Online:</h3>
                 <ul>

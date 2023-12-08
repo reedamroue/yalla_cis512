@@ -188,22 +188,55 @@ function Message({ socket, username, room, onlineUsers }) {
                 </button>
         <p>Live Chat</p>
     </div>
-    <ScrollToBottom className="chat-body">
-        {messageList.map((content, index) => (
-            <div
-                key={index}
-                className={`message ${username === content.username ? "sent" : "received"}`}
-            >
-                <div className="message-content">
-                    <p>{content.message}</p>
-                </div>
-                <div className="message-meta text-right text-xs text-gray-500">
-                    <p>{new Date(content.timestamp).toLocaleTimeString() + '   '}</p>
-                    <p>{content.username}</p>
-                </div>
-            </div>
-        ))}
-    </ScrollToBottom>
+    <ScrollToBottom className="chat-body" style={{ padding: '0 10px' }}>
+  {messageList.map((content, index) => {
+    const isSentByCurrentUser = username === content.username;
+    const alignTextRight = isSentByCurrentUser ? 'right' : 'left'; // Determine text alignment
+    return (
+      <div
+        key={index}
+        style={{
+          display: 'flex',
+          justifyContent: isSentByCurrentUser ? 'flex-end' : 'flex-start',
+          marginBottom: '10px',
+        }}
+      >
+        <div
+          style={{
+            maxWidth: '60%',
+            backgroundColor: isSentByCurrentUser ? '#00C8F8' : '#daf8cb',
+            color: isSentByCurrentUser ? 'white' : 'black',
+            padding: '10px',
+            marginLeft: '5px',
+            marginTop: '5px',
+            borderRadius: '10px',
+          }}
+        >
+          <p>{content.message}</p>
+        </div>
+        <div
+          style={{
+            textAlign: alignTextRight, // Apply text alignment
+            marginLeft: isSentByCurrentUser ? '10px' : '0',
+            marginRight: isSentByCurrentUser ? '0' : '10px',
+            fontSize: '0.75rem',
+            color: 'gray',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-end',
+          }}
+        >
+          <p>{new Date(content.timestamp).toLocaleTimeString()}</p>
+          <p style={{ fontWeight: 'bold', textAlign: alignTextRight }}>{content.username}</p> {/* Align based on text direction */}
+        </div>
+      </div>
+    );
+  })}
+</ScrollToBottom>
+
+
+
+
     <div className="chat-footer">
         <input
             type="text"
@@ -217,7 +250,7 @@ function Message({ socket, username, room, onlineUsers }) {
         </button>
     </div>
     <div className="chat-members">
-        <h4>Chat Members:</h4>
+        <h4 style={{fontWeight: 'bold'}}>Chat Members:</h4>
         <div>
             {users.map((user, index) => (
                 <div key={index}>{user}</div>

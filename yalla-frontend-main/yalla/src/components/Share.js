@@ -143,12 +143,13 @@ export default function Share({username}) {
                 </div>
                 <hr className="shareHr my-2"/>
                 <div className="shareBottom flex justify-between items-center">
-                <div className="flex items-center justify-center space-x-2"> 
-            <Event style={{color: '#EA3EF7' }} className="shareIcon" onMouseOver={updateEvents}/>
-            <span className="shareOptionText" onMouseOver={updateEvents}>Event</span>
-            <Select options={options} onChange={e => setEventId(e.value)}/>
-            </div>
-
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <Event style={{ color: '#EA3EF7' }} className="shareIcon" onMouseOver={updateEvents} />
+                        <span className="shareOptionText" onMouseOver={updateEvents}>Event</span>
+                    </div>
+                    <Select options={options} onChange={e => setEventId(e.value)} />
+                    </div>
                     <Button variant="primary" className="shareButton bg-blue-500 text-white rounded px-4 py-2" onClick={addPost} style={{backgroundColor: '#EA3EF7'}}>Share</Button>
                 </div>               
             </div>
