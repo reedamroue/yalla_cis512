@@ -163,8 +163,8 @@ function App() {
                 alt="Bootstrap 5" 
                 style={{ display: 'block', marginLeft: '-100px'}}/>
           <h5 className='mb-3 fs 3'>The community for community service lovers</h5>
-          <div className="mb-3 d-grid"><Button id="logInBtn" onClick={handleSubmit} variant="primary" size="lg" style={{backgroundColor: '#00C8F8', border: 'none', outline: 'none',}}>Login</Button></div>
-          <div className="mb-3 d-grid"><Button id="registerBtn" variant="primary" size="lg" onClick={handleSubmit} style={{backgroundColor: '#00C8F8', border: 'none', outline: 'none',}}>Register</Button></div>
+          <div className="mb-3 d-grid"><button id="logInBtn" className="bg-color1 py-2.5 px-3 border-none outline-none rounded-md text-white text-xl" onClick={handleSubmit}>Login</button></div>
+          <div className="mb-3 d-grid"><button id="registerBtn" className="bg-color1 py-2.5 px-3 border-none outline-none rounded-md text-white text-xl" onClick={handleSubmit}>Register</button></div>
         </Form>
       </Container>
     );
@@ -186,8 +186,8 @@ function App() {
                 alt="Bootstrap 5" 
                 style={{ display: 'block', marginLeft: '-100px'}}/>
           <h5 className='mb-3 fs 3'>Login as a</h5>
-          <div className="mb-3 d-grid"><Button id="logInBtn" onClick={goUserLogin} variant="primary" size="lg" style={{backgroundColor: '#00C8F8', border: 'none', outline: 'none',}}>User</Button></div>
-          <div className="mb-3 d-grid"><Button id="registerBtn" variant="primary" size="lg" onClick={goNGOLogin} style={{backgroundColor: '#00C8F8', border: 'none', outline: 'none',}}>NGO</Button></div>
+          <div className="mb-3 d-grid"><button id="logInBtn" className="bg-color1 py-2.5 px-3 border-none outline-none rounded-md text-white text-xl" onClick={goUserLogin}>User</button></div>
+          <div className="mb-3 d-grid"><button id="registerBtn" className='bg-color1 py-2.5 px-3 border-none outline-none rounded-md text-white text-xl' onClick={goNGOLogin}>NGO</button></div>
         </Form>
       </Container>
     );
@@ -215,8 +215,8 @@ function App() {
                 alt="Bootstrap 5" 
                 style={{ display: 'block', marginLeft: '-100px'}}/>
           <h5 className='mb-3 fs 3'>Register as a </h5>
-          <div className="mb-3 d-grid"><Button id="logInBtn" onClick={goUserRegister} variant="primary" size="lg" style={{backgroundColor: '#00C8F8', border: 'none', outline: 'none',}}>User</Button></div>
-          <div className="mb-3 d-grid"><Button id="registerBtn" variant="primary" size="lg" onClick={goNGORegister} style={{backgroundColor: '#00C8F8', border: 'none', outline: 'none',}}>NGO</Button></div>
+          <div className="mb-3 d-grid"><button id="logInBtn" className="bg-color1 py-2.5 px-3 border-none outline-none rounded-md text-white text-xl" onClick={goUserRegister}>User</button></div>
+          <div className="mb-3 d-grid"><button id="registerBtn" className="bg-color1 py-2.5 px-3 border-none outline-none rounded-md text-white text-xl" onClick={goNGORegister}>NGO</button></div>
         </Form>
       </Container>
     );
@@ -275,7 +275,7 @@ function App() {
             <Form.Group controlId='sign-in-check' className=" mb-4 d-flex justify-content-center">
               <Form.Check label="Remember Me"></Form.Check>
             </Form.Group>
-            <div className="d-grid"><Button variant="primary" size="lg" onClick={goUserHome} style={{backgroundColor: '#00C8F8', border: 'none', outline: 'none',}}> Sign In!</Button></div>
+            <div className="d-grid"><button className="bg-color1 py-2.5 px-3 border-none outline-none rounded-md text-white text-xl" onClick={goUserHome}> Sign In!</button></div>
           </Form>
         </Container>
   
@@ -336,7 +336,7 @@ function App() {
             <Form.Group controlId='sign-in-check' className=" mb-4 d-flex justify-content-center">
               <Form.Check label="Remember Me"></Form.Check>
             </Form.Group>
-            <div className="d-grid"><Button variant="primary" size="lg" onClick={goNGOHomePage} style={{backgroundColor: '#00C8F8', border: 'none', outline: 'none',}}> Sign In!</Button></div>
+            <div className="d-grid"><Button className="bg-color1 py-2.5 px-3 border-none outline-none rounded-md text-white text-xl" onClick={goNGOHomePage}> Sign In!</Button></div>
           </Form>
         </Container>
       );

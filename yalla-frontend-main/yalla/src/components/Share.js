@@ -145,7 +145,7 @@ export default function Share({username}) {
                 <div className="shareBottom flex justify-between items-center">
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <Event style={{ color: '#EA3EF7' }} className="shareIcon" onMouseOver={updateEvents} />
+                        <Event className="shareIcon text-color4" onMouseOver={updateEvents} />
                         <span className="shareOptionText" onMouseOver={updateEvents}>Event</span>
                     </div>
                     <Select options={options} onChange={e => setEventId(e.value)} />

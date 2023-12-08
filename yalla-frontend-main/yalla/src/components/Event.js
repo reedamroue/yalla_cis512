@@ -110,10 +110,10 @@ export default function Event({event_id, username, name, date, location, start_t
                 <h5>{location}</h5>
             </div>     
         </div> 
-        <h5 className='descrip-title' style={{ fontWeight: 'bold', color: '#00C8F8'}}>Description</h5>
+        <h5 className='font-bold text-color1'>Description</h5>
         <h5 className='description'>{description}</h5>
         <div className="component-wrappeer">
-            <h5 className='descrip-title' style={{ fontWeight: 'bold', color: '#00C8F8'}}>Volunteer Requirements</h5>
+            <h5 className='font-bold text-color1'>Volunteer Requirements</h5>
             <h5 className='description'>{volunteer_req}</h5>
         </div>
     </div>

@@ -36,7 +36,7 @@ function Item(data) {
               <span style={{ color: 'gray' }}>{value.location}</span>
             </div>
 
-            <span className="score" style={{ fontSize: '48px', color: '#EA3EF7', fontWeight: 'bold' }}>{value.score}</span>
+            <span className="text-5xl text-color4 font-bold">{value.score}</span>
           </div>
         </div>
       ))

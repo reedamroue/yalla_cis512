@@ -61,10 +61,10 @@ export default function Leaderboard() {
     <div className="board" style={{ paddingTop: '70px' }}>
         <h1 className='leaderboard' style={{ fontWeight: 'bold', marginTop: '10px'}}>Leaderboard</h1>
 
-        <div className="duration">
+        <div className="flex gap-4 justify-center">
             {/* <Button onClick={handleClickNGO} data-id='7'>NGO</Button> */}
-            <Button onClick={handleClickUser} data-id='30' style={{backgroundColor: '#EA3EF7' }}>Global</Button>
-            <Button data-id='30' style={{backgroundColor: '#EA3EF7' }}>Friends</Button>
+            <button className="bg-color4 hover:bg-color4Hover rounded-[50px] border-none text-white py-2 px-8" onClick={handleClickUser} data-id='30'>Global</button>
+            <button className="bg-color4 hover:bg-color4Hover rounded-[50px] border-none text-white py-2 px-8" onClick={handleClickUser} data-id='30'>Friends</button>
         </div>
 
         <LeaderboardProfiles Leaderboard={leaders}></LeaderboardProfiles>

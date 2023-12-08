@@ -47,13 +47,12 @@ function UserHome({username}) {
     if (page === HOME) {
         return(
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark" style={{
+                <nav className="navbar navbar-expand-lg navbar-dark bg-color1" style={{
             position: 'fixed',
             top: 0,
             left: 0,
             width: '100%',
-            zIndex: 1000,
-            backgroundColor: '#00C8F8' 
+            zIndex: 1000
         }}>
                 <a className="navbar-brand font-weight-bold" href="#" style={{ marginLeft: '10px' }}><h2>Yalla</h2></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,13 +89,12 @@ function UserHome({username}) {
     if (page === EVENTS) {
         return(
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark" style={{
+                <nav className="navbar navbar-expand-lg navbar-dark bg-color1" style={{
             position: 'fixed',
             top: 0,
             left: 0,
             width: '100%',
             zIndex: 1000,
-            backgroundColor: '#00C8F8' 
         }}>
                 <a className="navbar-brand font-weight-bold" href="#" style={{ marginLeft: '10px' }}><h2>Yalla</h2></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -132,13 +130,12 @@ function UserHome({username}) {
     if (page === LEADERBOARD) {
         return(
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark" style={{
+                <nav className="navbar navbar-expand-lg navbar-dark bg-color1" style={{
             position: 'fixed',
             top: 0,
             left: 0,
             width: '100%',
-            zIndex: 1000,
-            backgroundColor: '#00C8F8' 
+            zIndex: 1000
         }}>
                 <a className="navbar-brand font-weight-bold" href="#" style={{ marginLeft: '10px' }}><h2>Yalla</h2></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -174,13 +171,12 @@ function UserHome({username}) {
     if (page === PROFILE) {
         return(
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark" style={{
+                <nav className="navbar navbar-expand-lg navbar-dark bg-color1" style={{
             position: 'fixed',
             top: 0,
             left: 0,
             width: '100%',
-            zIndex: 1000,
-            backgroundColor: '#00C8F8' 
+            zIndex: 1000
         }}>
                 <a className="navbar-brand font-weight-bold" href="#" style={{ marginLeft: '10px' }}><h2>Yalla</h2></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -215,13 +211,12 @@ function UserHome({username}) {
     if (page === CHAT) {
         return(
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark" style={{
+                <nav className="navbar navbar-expand-lg navbar-dark bg-color1" style={{
             position: 'fixed',
             top: 0,
             left: 0,
             width: '100%',
-            zIndex: 1000,
-            backgroundColor: '#00C8F8' 
+            zIndex: 1000
         }}>
                 <a className="navbar-brand font-weight-bold" href="#" style={{ marginLeft: '10px' }}><h2>Yalla</h2></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
