@@ -40,7 +40,7 @@ function Sidebar({username}) {
         //setInterval(() => isNGOorUser(), 60000);
     })
     return (
-        <div className="sidebar" >
+        <div className="sidebar bg-white" >
             <div className="sidebarWrapper"></div>
             <ul className="sidebarList" style={{ marginTop: '-20px' }}>
                 <li className="sidebarListItem" key="1">

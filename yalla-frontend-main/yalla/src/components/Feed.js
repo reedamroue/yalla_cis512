@@ -69,7 +69,7 @@ export default function Feed({username}) {
   )*/
   //{numberLikes, timestamp, message, username, comments_list, usersWhoLiked, post_id}
   return (
-    <div className="feed">
+    <div className="feed bg-figmaGray">
     <div className="feedWrapper">
       <Share username={username}/>
       {sortedPosts.map((post) => (
