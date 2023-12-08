@@ -75,7 +75,7 @@ body {
 .chat-window .chat-header {
   height: 45px;
   border-radius: 6px;
-  background: #0275d8;
+  background: #00C8F8;
   position: relative;
   cursor: pointer;
 }
@@ -94,6 +94,16 @@ body {
 
   position: relative;
 }
+
+.sent {
+  color: #daf8cb; /* or any other color you prefer for sent messages */
+  text-align: right;
+}
+
+.received {
+  color: #00C8F8
+}
+
 .chat-window .chat-body .message-container {
   width: 100%;
   height: 100%;
