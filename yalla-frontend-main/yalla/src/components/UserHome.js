@@ -77,7 +77,7 @@ function UserHome({username}) {
                     </li>
                     </ul>
                     <h5 className="nav-text-now">Signed in as {username}</h5>
-                    <button className="bg-color2 hover:bg-color2Hover py-2 px-2.5 border-none outline-none rounded-md text-white" type="button" onClick={goLogin}>Log out</button>
+                    <button className="bg-color2 hover:bg-color2Hover py-2 px-2.5 border-none outline-none rounded-md text-white mr-5" type="button" onClick={goLogin}>Log out</button>
                 </div>
                 </nav>
 
@@ -119,7 +119,7 @@ function UserHome({username}) {
                     </li>
                     </ul>
                     <h5 className="nav-text-now">Signed in as {username}</h5>
-                    <button className="bg-color2 hover:bg-color2Hover py-2 px-2.5 border-none outline-none rounded-md text-white" type="button" onClick={goLogin}>Log out</button>
+                    <button className="bg-color2 hover:bg-color2Hover py-2 px-2.5 border-none outline-none rounded-md text-white mr-5" type="button" onClick={goLogin}>Log out</button>
                 </div>
                 </nav>
                 <EventsPage username={usernamelogged.current}/>
@@ -160,7 +160,7 @@ function UserHome({username}) {
                     </li>
                     </ul>
                     <h5 className="nav-text-now">Signed in as {username}</h5>
-                    <button className="bg-color2 hover:bg-color2Hover py-2 px-2.5 border-none outline-none rounded-md text-white" type="button" onClick={goLogin}>Log out</button>
+                    <button className="bg-color2 hover:bg-color2Hover py-2 px-2.5 border-none outline-none rounded-md text-white mr-5" type="button" onClick={goLogin}>Log out</button>
                 </div>
                 </nav>
                 <Leaderboardr/>
@@ -201,7 +201,7 @@ function UserHome({username}) {
                     </li>
                     </ul>
                     <h5 className="nav-text-now">Signed in as {username}</h5>
-                    <button className="bg-color2 hover:bg-color2Hover py-2 px-2.5 border-none outline-none rounded-md text-white" type="button" onClick={goLogin}>Log out</button>
+                    <button className="bg-color2 hover:bg-color2Hover py-2 px-2.5 border-none outline-none rounded-md text-white mr-5" type="button" onClick={goLogin}>Log out</button>
                 </div>
                 </nav>
                 <NGOProfile username={usernamelogged.current} />
@@ -241,7 +241,7 @@ function UserHome({username}) {
                     </li>
                     </ul>
                     <h5 className="nav-text-now">Signed in as {username}</h5>
-                    <button className="bg-color2 hover:bg-color2Hover py-2 px-2.5 border-none outline-none rounded-md text-white" type="button" onClick={goLogin}>Log out</button>
+                    <button className="bg-color2 hover:bg-color2Hover py-2 px-2.5 border-none outline-none rounded-md text-white mr-5" type="button" onClick={goLogin}>Log out</button>
                 </div>
                 </nav>
                 <Chat usern={usernamelogged.current}/>
