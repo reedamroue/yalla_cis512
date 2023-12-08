@@ -63,21 +63,21 @@ function UserHome({username}) {
                     <li className="nav-item active">
                         <a className="nav-link active" onClick={goHome}>Home</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role="button">
                         <a className="nav-link" onClick={goEvents}>Events</a>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" onClick={goLeaderboard}>Leaderboard</a>
+                    <li className="nav-item" role="button">
+                        <a href className="nav-link" onClick={goLeaderboard}>Leaderboard</a>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" onClick={goChat}>Chat</a>
+                    <li className="nav-item" role="button">
+                        <a href className="nav-link" onClick={goChat}>Chat</a>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" onClick={goProfile}>Profile</a>
+                    <li className="nav-item" role="button">
+                        <a href className="nav-link" onClick={goProfile}>Profile</a>
                     </li>
                     </ul>
                     <h5 className="nav-text-now">Signed in as {username}</h5>
-                    <Button className="btn btn-danger" type="button" onClick={goLogin}>LogOut</Button>
+                    <Button className="btn btn-danger" type="button" onClick={goLogin}>Log out</Button>
                 </div>
                 </nav>
 
@@ -102,24 +102,24 @@ function UserHome({username}) {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarText">
                     <ul className="navbar-nav mr-auto">
-                    <li className="nav-item active">
+                    <li className="nav-item active" role="button">
                         <a className="nav-link" onClick={goHome}>Home</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role="button">
                         <a className="nav-link active" onClick={goEvents}>Events</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role="button">
                         <a className="nav-link" onClick={goLeaderboard}>Leaderboard</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role="button">
                         <a className="nav-link" onClick={goChat}>Chat</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role="button">
                         <a className="nav-link" onClick={goProfile}>Profile</a>
                     </li>
                     </ul>
                     <h5 className="nav-text-now">Signed in as {username}</h5>
-                    <Button className="btn btn-danger" type="button" onClick={goLogin}>LogOut</Button>
+                    <Button className="btn btn-danger" type="button" onClick={goLogin}>Log out</Button>
                 </div>
                 </nav>
                 <EventsPage username={usernamelogged.current}/>
@@ -143,24 +143,24 @@ function UserHome({username}) {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarText">
                     <ul className="navbar-nav mr-auto">
-                    <li className="nav-item active">
+                    <li className="nav-item active" role="button">
                         <a className="nav-link" onClick={goHome}>Home</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role="button">
                         <a className="nav-link" onClick={goEvents}>Events</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role="button">
                         <a className="nav-link active" onClick={goLeaderboard}>Leaderboard</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role="button">
                         <a className="nav-link" onClick={goChat}>Chat</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role="button">
                         <a className="nav-link" onClick={goProfile}>Profile</a>
                     </li>
                     </ul>
                     <h5 className="nav-text-now">Signed in as {username}</h5>
-                    <Button className="btn btn-danger" type="button" onClick={goLogin}>LogOut</Button>
+                    <Button className="btn btn-danger" type="button" onClick={goLogin}>Log out</Button>
                 </div>
                 </nav>
                 <Leaderboardr/>
@@ -184,24 +184,24 @@ function UserHome({username}) {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarText">
                     <ul className="navbar-nav mr-auto">
-                    <li className="nav-item">
+                    <li className="nav-item" role='button'>
                         <a className="nav-link" onClick={goHome}>Home</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role='button'>
                         <a className="nav-link" onClick={goEvents}>Events</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role='button'>
                         <a className="nav-link" onClick={goLeaderboard}>Leaderboard</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role='button'>
                         <a className="nav-link" onClick={goChat}>Chat</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role='button'>
                         <a className="nav-link active" onClick={goProfile}>Profile</a>
                     </li>
                     </ul>
                     <h5 className="nav-text-now">Signed in as {username}</h5>
-                    <Button className="btn btn-danger" type="button" onClick={goLogin}>LogOut</Button>
+                    <Button className="btn btn-danger" type="button" onClick={goLogin}>Log out</Button>
                 </div>
                 </nav>
                 <NGOProfile username={usernamelogged.current} />
@@ -224,24 +224,24 @@ function UserHome({username}) {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarText">
                     <ul className="navbar-nav mr-auto">
-                    <li className="nav-item">
+                    <li className="nav-item" role='button'>
                         <a className="nav-link" onClick={goHome}>Home</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role='button'>
                         <a className="nav-link" onClick={goEvents}>Events</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role='button'>
                         <a className="nav-link" onClick={goLeaderboard}>Leaderboard</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role='button'>
                         <a className="nav-link active" onClick={goChat}>Chat</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" role='button'>
                         <a className="nav-link" onClick={goProfile}>Profile</a>
                     </li>
                     </ul>
                     <h5 className="nav-text-now">Signed in as {username}</h5>
-                    <Button className="btn btn-danger" type="button" onClick={goLogin}>LogOut</Button>
+                    <Button className="btn btn-danger" type="button" onClick={goLogin}>Log out</Button>
                 </div>
                 </nav>
                 <Chat usern={usernamelogged.current}/>
