@@ -25,7 +25,7 @@ const addNgo = async (db, newNgo, name) => {
     const newPost = new Object(); 
     newPost.comments = []; 
     newPost.likes = []; 
-    newPost.message = `${newNgo._id} has joined Phlame`
+    newPost.message = `${newNgo._id} has joined Yalla`
     addPost(db, newPost);
     return result;
   } catch (err) {
