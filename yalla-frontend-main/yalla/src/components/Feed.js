@@ -9,6 +9,12 @@ export default function Feed({username}) {
   const SERVER_URL = "http://localhost:5001"
   //let navigate = useNavigate()
   const [posts, setPosts] = useState([])
+
+  const sortedPosts = posts.sort((a, b) => {
+    const dateA = new Date(a[0].date);
+    const dateB = new Date(b[0].date);
+    return dateB - dateA;
+  });
   //const posts = useRef([])
   //const postObjects = useRef([])
   /*async function addCom() {
@@ -64,23 +70,23 @@ export default function Feed({username}) {
   //{numberLikes, timestamp, message, username, comments_list, usersWhoLiked, post_id}
   return (
     <div className="feed">
-        <div className="feedWrapper">
-            <Share username={username}/>
-            {posts.map((post) => (
-                <div className="my-4" key={post[0]._id}>
-                    <Postr numberLikes={post[0].likes.length} message={post[0].message == null ? post[0].newPost.message : post[0].message} 
-                    event_id={post[0].event == null ? "" : post[0].event}
-                    curr_user={username}
-                    timestamp={post[0].date}
-                    username={post[0].username}
-                    comments_list={post[0].comments}
-                    usersWhoLiked={post[0].likes}
-                    post_id={post[0]._id}
-                    myUserId="hello"/>
-                </div>
-            ))}
-            {posts.length === 0 && <div>No posts to show!</div>}
+    <div className="feedWrapper">
+      <Share username={username}/>
+      {sortedPosts.map((post) => (
+        <div className="my-4" key={post[0]._id}>
+          <Postr numberLikes={post[0].likes.length} message={post[0].message == null ? post[0].newPost.message : post[0].message} 
+          event_id={post[0].event == null ? "" : post[0].event}
+          curr_user={username}
+          timestamp={post[0].date}
+          username={post[0].username}
+          comments_list={post[0].comments}
+          usersWhoLiked={post[0].likes}
+          post_id={post[0]._id}
+          myUserId="hello"/>
         </div>
+      ))}
+      {sortedPosts.length === 0 && <div>No posts to show!</div>}
     </div>
+  </div>
   )
 }
