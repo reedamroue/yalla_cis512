@@ -150,7 +150,7 @@ export default function Share({username}) {
                     </div>
                     <Select options={options} onChange={e => setEventId(e.value)} />
                     </div>
-                    <button className="shareButton bg-color4 text-white rounded px-4 py-2" onClick={addPost}>Share</button>
+                    <button className="shareButton bg-color4 hover:bg-color4Hover text-white rounded px-4 py-2" onClick={addPost}>Share</button>
                 </div>               
             </div>
         </div>

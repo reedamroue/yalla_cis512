@@ -178,9 +178,7 @@ function Postr({numberLikes, timestamp, message, username, comments_list, usersW
                     value={newComment}
                     onChange={(e) => setNewComment(e.target.value)}
                 ></Input>
-                <Button className="bg-color4"
-                    style={{border: 'none',
-                    outline: 'none', }}
+                <button className="bg-color4 py-2 px-3 border-none outline-none rounded-md hover:bg-color4Hover text-white"
                     onClick={() => {
                         if (newComment == "") {
                             const confirmDia = () => {
@@ -203,7 +201,7 @@ function Postr({numberLikes, timestamp, message, username, comments_list, usersW
                     }}
                 >
                     {">"}
-                </Button>
+                </button>
             </div>
             <div className="flex-line space-x-4 " style={{ marginTop: '5px' }}>
                 <LikeButton onClick={() => likeClicked()} disabled={isLiked}></LikeButton>

@@ -109,15 +109,15 @@ export default function AddFriend({currUser}) {
   return (
     <div>
         <div>
-            <Group htmlColor="blue"
-            onMouseOver={updatePeople} style={{color: '#EA3EF7'}}/>
+            <Group className="text-color4" htmlColor="blue"
+            onMouseOver={updatePeople}/>
             <span className="shareOptionText"
             onMouseOver={updatePeople}>Add Friend</span>
             <Select options={allThem} 
             onChange={e => setFriend(e.value)}
             onMouseOver={updatePeople}/>
         </div>
-        <button className="shareButton mt-[5px] text-white bg-color4"
+        <button className="shareButton mt-[5px] text-white bg-color4 hover:bg-color4Hover"
         onClick={addFriend} onMouseOver={updatePeople}>Add!</button>
     </div>
   )

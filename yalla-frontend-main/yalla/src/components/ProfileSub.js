@@ -59,7 +59,7 @@ function ProfileSub({currUser, isNgo}) {
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', padding: '20px' }}>
           
                 <div className="anaWrapper" style={{ background: 'white', borderRadius: '25px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', padding: '30px', margin: '10px auto', width: 'fit-content', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                  <h3 className='descrip-title-ana' style={{ margin: '0 0 20px 0', color: '#00C8F8'}}>Event Goal</h3>
+                  <h3 className='relative text-color1 mb-[20px]'>Event Goal</h3>
                   <div style={{ width: 200, height: 200 }}>
                   <CircularProgressbar
                         value={currUser == null ? 0 : currUser.events.length}
@@ -82,8 +82,8 @@ function ProfileSub({currUser, isNgo}) {
                 </div>
           
                 <div className="anaWrapper" style={{ background: 'white', borderRadius: '25px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', padding: '30px', margin: '10px auto', width: 'fit-content', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                  <h3 className='descrip-title-ana-com' style={{ margin: '0 0 20px 0', color: '#00C8F8'}}>Number of Events</h3>
-                  <h1 className="display-1 number-ana" style={{ fontSize: '48px', color: '#EA3EF7', margin: '0' }}>
+                  <h3 className='text-color1 text-relative mb-[20px]'>Number of Events</h3>
+                  <h1 className="m-0 text-5xl text-color4">
                     {currUser == null ? "" : currUser.events.length}
                     </h1>
                   <h3 className='subtitle-ana-com' style={{ marginTop: '20px'}}>Keep going to events to move up a rank!</h3>

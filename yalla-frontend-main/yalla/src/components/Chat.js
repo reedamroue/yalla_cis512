@@ -238,9 +238,9 @@ function Chat({usern}) {
                         You are <span className="text-green-500">{username}</span>
                     </div>
                     {!isOnline ? (
-                <Button onClick={joinRoom} style={{ backgroundColor: '#EA3EF7' }}>Go Online!</Button>
+                <button className="bg-color4 hover:bg-color4Hover rounded-md px-2.5 py-2.5 border-none outline-none text-white" onClick={joinRoom}>Go Online!</button>
                 ) : (
-                <Button disabled style={{ backgroundColor: '#EA3EF7' }}>Already online</Button>
+                <Button className="bg-color4 hover:bg-color4Hover rounded-md px-2.5 py-2.5 border-none outline-none text-white" disabled>Already online</Button>
                 )}
 
                 </div>
@@ -274,14 +274,13 @@ function Chat({usern}) {
                         />
                     </div>
                     <div>
-                        <Button
+                        <button className="bg-color4 hover:bg-color4Hover rounded-md px-2.5 py-2.5 border-none outline-none text-white mt-[5px]"
                             onClick={() => {
                                 sendGroupData(selectedValue, username, socket.id, connectedUsers)
                             }}
-                            style={{backgroundColor: '#EA3EF7', marginTop: '5px' }}
                         >
                             Send Invite!
-                        </Button>
+                        </button>
                     </div>
                 </div>
             </div>
