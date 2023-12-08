@@ -68,7 +68,7 @@ function CalendarPage({currUser, isNgo}) {
 
     return (
         <div className="CalendarPage">
-            <h1 className='profile-sub-header'>Upcoming Events</h1>
+            <h1 className='profile-sub-header' style={{ color: '#00C8F8'}}>Upcoming Events</h1>
             {!isNgo ?
             <Calendar 
             selectable

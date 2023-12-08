@@ -238,7 +238,7 @@ function Chat({usern}) {
                         You are <span className="text-blue-500">{username}</span>
                     </div>
                     {!isOnline ? (
-                        <Button onClick={joinRoom}>Go Online!</Button>
+                        <Button onClick={joinRoom} style={{backgroundColor: '#EA3EF7' }}>Go Online!</Button>
                     ) : (
                         <Button disabled>Already online</Button>
                     )}
@@ -277,6 +277,7 @@ function Chat({usern}) {
                             onClick={() => {
                                 sendGroupData(selectedValue, username, socket.id, connectedUsers)
                             }}
+                            style={{backgroundColor: '#EA3EF7', marginTop: '5px' }}
                         >
                             Send Invite!
                         </Button>

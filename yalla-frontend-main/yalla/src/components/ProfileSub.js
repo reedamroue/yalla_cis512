@@ -40,11 +40,10 @@ function ProfileSub({currUser, isNgo}) {
     if (page === EVENTS) {
         return (
             <div>
-                <nav class="nav nav-pills nav-justified">
-                {/* <a class="nav-item nav-link" onClick={goGeneral}>General</a> */}
-                <a class="nav-item nav-link active" onClick={goEvents}>Events</a>
-                <a class="nav-item nav-link" onClick={goAnalytics}>Analytics</a>
-                </nav>
+            <nav className="nav nav-pills nav-justified">
+                <a className='nav-item nav-link active' style={{ backgroundColor: '#00C8F8'}} onClick={() => goEvents()}>Events</a>
+                <a className='nav-item nav-link' style={{ backgroundColor: 'transparent', color: 'black'}} onClick={() => goAnalytics()}>Analytics</a>
+            </nav>
                 <CalendarPage currUser={currUser} isNgo={isNgo}/>
             </div>
         )
@@ -52,29 +51,42 @@ function ProfileSub({currUser, isNgo}) {
     if (page === ANALYTICS) {
         return (
             <div style={{ textAlign: 'center' }}> {/* Ensures all content within is centered */}
-              <nav className="nav nav-pills nav-justified">
-                {/* Other nav items */}
-                <a className="nav-item nav-link" onClick={goEvents}>Events</a>
-                <a className="nav-item nav-link active" onClick={goAnalytics}>Analytics</a>
-              </nav>
+            <nav className="nav nav-pills nav-justified">
+            <a className='nav-item nav-link' style={{ backgroundColor: 'transparent', color: 'black'}} onClick={() => goEvents()}>Events</a>
+                <a className='nav-item nav-link active' style={{ backgroundColor: '#00C8F8'}} onClick={() => goAnalytics()}>Analytics</a>
+            </nav>
           
-              {/* This is the main container for the pills, set to take the full height of the viewport and center its children */}
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', padding: '20px' }}>
           
-                {/* Event Goal Pill */}
                 <div className="anaWrapper" style={{ background: 'white', borderRadius: '25px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', padding: '30px', margin: '10px auto', width: 'fit-content', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                  <h3 className='descrip-title-ana' style={{ margin: '0 0 20px 0' }}>Event Goal</h3>
+                  <h3 className='descrip-title-ana' style={{ margin: '0 0 20px 0', color: '#00C8F8'}}>Event Goal</h3>
                   <div style={{ width: 200, height: 200 }}>
-                    <CircularProgressbar value={currUser == null ? 0 : currUser.events.length} maxValue={currUser == null ? 0 : currUser.goal} text={`${currUser == null ? 0 : Math.round((currUser.events.length / currUser.goal) * 100)}%`} />
+                  <CircularProgressbar
+                        value={currUser == null ? 0 : currUser.events.length}
+                        maxValue={currUser == null ? 0 : currUser.goal}
+                        text={`${currUser == null ? 0 : Math.round((currUser.events.length / currUser.goal) * 100)}%`}
+                        styles={{
+                            path: {
+                            stroke: `#EA3EF7`,
+                            },
+                            trail: {
+                            stroke: '#d6d6d6',
+                            },
+                            text: {
+                            fill: '#EA3EF7',
+                            },
+                        }}
+                        />
                   </div>
-                  <h3 className='subtitle-ana' style={{ marginTop: '20px' }}>You are almost at your event goal!</h3>
+                  <h3 className='subtitle-ana' style={{ marginTop: '20px'}}>You are almost at your event goal!</h3>
                 </div>
           
-                {/* Number of Events Pill */}
                 <div className="anaWrapper" style={{ background: 'white', borderRadius: '25px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', padding: '30px', margin: '10px auto', width: 'fit-content', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                  <h3 className='descrip-title-ana-com' style={{ margin: '0 0 20px 0' }}>Number of Events</h3>
-                  <h1 className="display-1 number-ana" style={{ fontSize: '48px', color: '#E53935', margin: '0' }}>{currUser == null ? "" : currUser.events.length}</h1>
-                  <h3 className='subtitle-ana-com' style={{ marginTop: '20px' }}>Keep going to events to move up a rank!</h3>
+                  <h3 className='descrip-title-ana-com' style={{ margin: '0 0 20px 0', color: '#00C8F8'}}>Number of Events</h3>
+                  <h1 className="display-1 number-ana" style={{ fontSize: '48px', color: '#EA3EF7', margin: '0' }}>
+                    {currUser == null ? "" : currUser.events.length}
+                    </h1>
+                  <h3 className='subtitle-ana-com' style={{ marginTop: '20px'}}>Keep going to events to move up a rank!</h3>
                 </div>
           
               </div>

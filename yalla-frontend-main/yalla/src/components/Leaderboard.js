@@ -63,8 +63,8 @@ export default function Leaderboard() {
 
         <div className="duration">
             {/* <Button onClick={handleClickNGO} data-id='7'>NGO</Button> */}
-            <Button onClick={handleClickUser} data-id='30'>Global</Button>
-            <Button data-id='30'>Friends</Button>
+            <Button onClick={handleClickUser} data-id='30' style={{backgroundColor: '#EA3EF7' }}>Global</Button>
+            <Button data-id='30' style={{backgroundColor: '#EA3EF7' }}>Friends</Button>
         </div>
 
         <LeaderboardProfiles Leaderboard={leaders}></LeaderboardProfiles>

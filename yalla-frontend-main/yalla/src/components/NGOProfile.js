@@ -49,7 +49,7 @@ const NGOProfile = ({username}) => {
                 margin: "15px 15px"
             }}>
                     <h1 style={{fontWeight: 'bold'}}>{currUser == null ? "" : isNGO ? currUser._id : currUser._id}</h1>
-                    <h4 className="descrip-title-phone">{isNGO ? "Phone Number:" : "Age:"}</h4>
+                    <h4 className="descrip-title-phone" style={{color: '#00C8F8'}}>{isNGO ? "Phone Number:" : "Age:"}</h4>
                     <h4>{currUser == null ? "" : isNGO ? currUser.contact : currUser.age}</h4>
                     <div style={{display:"flex", justifyContent:"space-between", width: "108%", margin: "20px 0px"}}>
                         <h3>{currUser == null ? "" : currUser.events.length + " Events"}</h3>

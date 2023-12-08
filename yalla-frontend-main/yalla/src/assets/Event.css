@@ -13,6 +13,11 @@
   .eventWrapper {
     padding: 10px;
   }
+
+  .btn-custom-purple {
+    background-color: #EA3EF7 !important; 
+    border-color: #EA3EF7; 
+  }
   
   .eventTop {
     display: flex;

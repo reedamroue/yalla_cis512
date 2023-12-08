@@ -21,23 +21,24 @@ export default function EventsPage({username}) {
       refresh()
   }, [])
   return (
-    <div  style={{ paddingTop: '70px' }}>
-        <Container>
-            <h1 className="title" style={{ fontWeight: 'bold', marginTop: '10px', marginLeft: '30%'}}>Upcoming Events</h1>
-            <ul id="events"></ul>
-        </Container>
-        {events.map((post) => (
-                <div className="my-4" key={post[0].name}>
-                  <Event name={post[0].name} date={post[0].date} location={post[0].address + ', ' + post[0].city + ', ' + post[0].state + ', ' + post[0].zipcode} 
-                  start_time={post[0].starttime}
-                  description={post[0].description} 
-                  volunteer_req={post[0].requirements}
-                  username={username}
-                  event_id={post[0]._id}
-                  going={post[0].attendees.includes(username)}/>
-                </div>
-            ))}
-          {events.length === 0 && <div>No posts to show!</div>}
+<div style={{ paddingTop: '70px' }}>
+  <Container>
+    <h1 className="title" style={{ fontWeight: 'bold', marginTop: '10px', textAlign: 'center' }}>Upcoming Events</h1>
+    <ul id="events"></ul>
+  </Container>
+  {events.map((post) => (
+    <div className="my-4" key={post[0].name}>
+      <Event name={post[0].name} date={post[0].date} location={post[0].address + ', ' + post[0].city + ', ' + post[0].state + ', ' + post[0].zipcode} 
+      start_time={post[0].starttime}
+      description={post[0].description} 
+      volunteer_req={post[0].requirements}
+      username={username}
+      event_id={post[0]._id}
+      going={post[0].attendees.includes(username)}/>
     </div>
+  ))}
+  {events.length === 0 && <div style={{ textAlign: 'center' }}>No posts to show!</div>}
+</div>
+
   )
 }

@@ -44,11 +44,11 @@ function Sidebar({username}) {
             <div className="sidebarWrapper"></div>
             <ul className="sidebarList" style={{ marginTop: '-20px' }}>
                 <li className="sidebarListItem" key="1">
-                    <RssFeed htmlColor="purple" className="sidebarIcon"/>
+                    <RssFeed htmlColor='green' className="sidebarIcon"/>
                     <span className="sidebarListItemText">Feed</span>
                 </li>
                 <li className="sidebarListItem" key="2">
-                    <DynamicFeed htmlColor="gold" className="sidebarIcon"/>
+                    <DynamicFeed htmlColor="orange" className="sidebarIcon"/>
                     <span className="sidebarListItemText">My Posts</span>
                 </li>
                 <li className="sidebarListItem" key="3">

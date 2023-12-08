@@ -77,7 +77,7 @@ export default function NGORegisterProfile() {
           <Form.Group controlId='phone-number' className
           ='mb-3'><Form.Control type="phoneNumber" size="1g" placeholder='XXX-XXXX-XXXX' className='position-relative'
           onChange={e => currNumber.current = e.target.value }></Form.Control></Form.Group>
-          <h2 className="text-primary mb-3 fs 3 d-grid">Preferences</h2>
+          <h2 className="mb-3 fs 3 d-grid" style={{color: '#00C8F8'}}>Preferences</h2>
           <h5 className='mb-3 fs 3 d-grid'>Description</h5>
           <Form.Group controlId='description' className='mb-3'><Form.Control type="string" size="1g" placeholder='Add short description for NGO...' className='position-relative'
           onChange={e => currDescr.current = e.target.value }></Form.Control></Form.Group>

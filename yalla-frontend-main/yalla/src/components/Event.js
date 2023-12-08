@@ -67,7 +67,7 @@ export default function Event({event_id, username, name, date, location, start_t
         </div>
         <div className="component-wrapper">
             <div className="date-event-picture">
-                <DateRange htmlColor="green"/>
+                <DateRange htmlColor="blue"/>
             </div> 
             <div className="date-event">
                 <h5>{date}</h5>
@@ -76,7 +76,7 @@ export default function Event({event_id, username, name, date, location, start_t
 
         <div className="component-wrapper">
             <div className="date-event-picture">
-                <AccessTime htmlColor="blue"/>
+                <AccessTime htmlColor="orange"/>
             </div> 
             <div className="date-event">
                 <h5>{start_time}</h5>
@@ -84,7 +84,7 @@ export default function Event({event_id, username, name, date, location, start_t
             <div className="more-info-button">
                 {/* <Button className= { amgoing ? "btn btn-success" : "btn btn-primary"} onClick={toggleGoing}>{amgoing ? "Registered" : "Register"}</Button> */}
                 <Button 
-                    className={`btn ${amgoing ? "btn-success" : "btn-primary"} rounded-circle`} 
+                    className={`btn ${amgoing ? "btn-success" : "btn-custom-purple"} rounded-circle`} 
                     onClick={toggleGoing}
                     style={{
                     position: 'absolute',
@@ -110,10 +110,10 @@ export default function Event({event_id, username, name, date, location, start_t
                 <h5>{location}</h5>
             </div>     
         </div> 
-        <h5 className='descrip-title' style={{ fontWeight: 'bold' }}>Description</h5>
+        <h5 className='descrip-title' style={{ fontWeight: 'bold', color: '#00C8F8'}}>Description</h5>
         <h5 className='description'>{description}</h5>
         <div className="component-wrappeer">
-            <h5 className='descrip-title' style={{ fontWeight: 'bold' }}>Volunteer Requirements</h5>
+            <h5 className='descrip-title' style={{ fontWeight: 'bold', color: '#00C8F8'}}>Volunteer Requirements</h5>
             <h5 className='description'>{volunteer_req}</h5>
         </div>
     </div>

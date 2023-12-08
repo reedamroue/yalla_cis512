@@ -110,7 +110,7 @@ export default function AddFriend({currUser}) {
     <div>
         <div>
             <Group htmlColor="blue"
-            onMouseOver={updatePeople}/>
+            onMouseOver={updatePeople} style={{color: '#EA3EF7'}}/>
             <span className="shareOptionText"
             onMouseOver={updatePeople}>Add Friend</span>
             <Select options={allThem} 
@@ -118,7 +118,7 @@ export default function AddFriend({currUser}) {
             onMouseOver={updatePeople}/>
         </div>
         <Button variant="primary" className="shareButton text-white"
-        onClick={addFriend} style={{ marginTop: '5px' }}
+        onClick={addFriend} style={{ marginTop: '5px', backgroundColor: '#EA3EF7' }}
         onMouseOver={updatePeople}>Add!</Button>
     </div>
   )

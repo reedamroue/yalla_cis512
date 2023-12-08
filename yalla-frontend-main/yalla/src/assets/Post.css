@@ -75,10 +75,3 @@
       border-bottom: 1px dashed gray;
       font-size: 15px;
   }
-
-  .flex-line {
-    display: flex;
-    align-items: center;
-    justify-content: start; /* or 'flex-start' */
-    gap: 16px; /* or any other value for space-x-4 */
-}

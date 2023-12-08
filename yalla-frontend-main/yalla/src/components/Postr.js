@@ -172,13 +172,15 @@ function Postr({numberLikes, timestamp, message, username, comments_list, usersW
                 </div>
             }
             <Comments comments={comments}></Comments>
-            <div className="flex-line">
+            <div className="flex-line" style={{ display: 'flex', alignItems: 'center' }}>
                 <Input
                     placeholder="Comment..."
                     value={newComment}
                     onChange={(e) => setNewComment(e.target.value)}
                 ></Input>
                 <Button 
+                    style={{backgroundColor: '#EA3EF7', border: 'none',
+                    outline: 'none', }}
                     onClick={() => {
                         if (newComment == "") {
                             const confirmDia = () => {
