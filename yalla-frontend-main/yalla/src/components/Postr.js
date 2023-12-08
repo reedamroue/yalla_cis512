@@ -178,8 +178,8 @@ function Postr({numberLikes, timestamp, message, username, comments_list, usersW
                     value={newComment}
                     onChange={(e) => setNewComment(e.target.value)}
                 ></Input>
-                <Button 
-                    style={{backgroundColor: '#EA3EF7', border: 'none',
+                <Button className="bg-color4"
+                    style={{border: 'none',
                     outline: 'none', }}
                     onClick={() => {
                         if (newComment == "") {
