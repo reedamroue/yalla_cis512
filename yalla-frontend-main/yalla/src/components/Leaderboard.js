@@ -62,8 +62,8 @@ export default function Leaderboard() {
         <h1 className='leaderboard' style={{ fontWeight: 'bold', marginTop: '10px'}}>Leaderboard</h1>
 
         <div className="duration">
-            <Button onClick={handleClickNGO} data-id='7'>NGO</Button>
-            <Button onClick={handleClickUser} data-id='30'>User</Button>
+            {/* <Button onClick={handleClickNGO} data-id='7'>NGO</Button> */}
+            <Button onClick={handleClickUser} data-id='30'>Global</Button>
             <Button data-id='30'>Friends</Button>
         </div>
 

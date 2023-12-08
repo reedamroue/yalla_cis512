@@ -7,14 +7,14 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 function ProfileSub({currUser, isNgo}) {
-    const GENERAL = 0;
+    // const GENERAL = 0;
     const EVENTS = 1; 
     const ANALYTICS = 2;
-    const [page, setPage] = useState(GENERAL);
+    const [page, setPage] = useState(EVENTS);
 
-    function goGeneral() {
-        setPage(GENERAL);
-      }
+    // function goGeneral() {
+    //     setPage(GENERAL);
+    //   }
     
       function goEvents() {
         setPage(EVENTS);
@@ -24,24 +24,24 @@ function ProfileSub({currUser, isNgo}) {
         setPage(ANALYTICS);
       }
 
-    if (page === GENERAL) {
-        return (
-            <div>
-                <nav class="nav nav-pills nav-justified">
-                <a class="nav-item nav-link active" onClick={goGeneral}>General</a>
-                <a class="nav-item nav-link" onClick={goEvents}>Events</a>
-                <a class="nav-item nav-link" onClick={goAnalytics}>Analytics</a>
-                </nav>
-                <h3 className='descrip-title'>{isNgo ? "More about this NGO" : "Interests"}</h3>
-                <h5>{currUser == null ? "" : isNgo ? currUser.description : currUser.interests}</h5>
-            </div>
-        )
-    }
+    // if (page === GENERAL) {
+    //     return (
+    //         <div>
+    //             <nav class="nav nav-pills nav-justified">
+    //             {/* <a class="nav-item nav-link active" onClick={goGeneral}>General</a> */}
+    //             <a class="nav-item nav-link" onClick={goEvents}>Events</a>
+    //             <a class="nav-item nav-link" onClick={goAnalytics}>Analytics</a>
+    //             </nav>
+    //             <h3 className='descrip-title'>{isNgo ? "More about this NGO" : "Interests"}</h3>
+    //             <h5>{currUser == null ? "" : isNgo ? currUser.description : currUser.interests}</h5>
+    //         </div>
+    //     )
+    // }
     if (page === EVENTS) {
         return (
             <div>
                 <nav class="nav nav-pills nav-justified">
-                <a class="nav-item nav-link" onClick={goGeneral}>General</a>
+                {/* <a class="nav-item nav-link" onClick={goGeneral}>General</a> */}
                 <a class="nav-item nav-link active" onClick={goEvents}>Events</a>
                 <a class="nav-item nav-link" onClick={goAnalytics}>Analytics</a>
                 </nav>
@@ -53,7 +53,7 @@ function ProfileSub({currUser, isNgo}) {
         return (
             <div>
                 <nav class="nav nav-pills nav-justified">
-                <a class="nav-item nav-link" onClick={goGeneral}>General</a>
+                {/* <a class="nav-item nav-link" onClick={goGeneral}>General</a> */}
                 <a class="nav-item nav-link" onClick={goEvents}>Events</a>
                 <a class="nav-item nav-link active" onClick={goAnalytics}>Analytics</a>
                 </nav>
