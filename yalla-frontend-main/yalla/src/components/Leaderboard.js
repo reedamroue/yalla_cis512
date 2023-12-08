@@ -59,7 +59,7 @@ export default function Leaderboard() {
 
   return (
     <div className="board" style={{ paddingTop: '70px' }}>
-        <h1 className='leaderboard'>Leaderboard</h1>
+        <h1 className='leaderboard' style={{ fontWeight: 'bold', marginTop: '10px'}}>Leaderboard</h1>
 
         <div className="duration">
             <Button onClick={handleClickNGO} data-id='7'>NGO</Button>

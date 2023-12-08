@@ -154,7 +154,7 @@ function Postr({numberLikes, timestamp, message, username, comments_list, usersW
     </div>
 </div>
 
-            <div><h2>{message}</h2></div>
+            <div style={{ marginTop: '20px'}}><h2>{message}</h2></div>
             {event[0] != null ? 
             <Event name={event[0].name} date={event[0].date} location={event[0].address + ', ' + event[0].city + ', ' + event[0].state + ', ' + event[0].zipcode} 
                   start_time={event[0].starttime}
@@ -164,8 +164,13 @@ function Postr({numberLikes, timestamp, message, username, comments_list, usersW
                   event_id={event[0]._id}
                   going={event[0].attendees.includes(curr_user)}/> : 
                   <div></div>}
-            <div><h7>Comments</h7></div>
-            {/* <hr/> */}
+            {
+                comments.length > 0 &&
+                <div style={{ marginTop: '20px', marginBottom: '-10px'}}>
+                    <div><h6>Comments</h6></div>
+                    <hr style={{ marginTop: '-1px' }}/>
+                </div>
+            }
             <Comments comments={comments}></Comments>
             <div className="flex-line">
                 <Input

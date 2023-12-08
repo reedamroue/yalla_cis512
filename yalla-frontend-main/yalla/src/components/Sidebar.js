@@ -63,7 +63,7 @@ function Sidebar({username}) {
                 {!isNGO ? <AddFriend currUser={username}/> : <div></div>}
                 </li>
             </ul>
-            <h3 style={{ marginTop: '20px' }}>Friends</h3>
+            <h3 style={{ marginTop: '20px',  fontWeight: 'bold'}}>Friends</h3>
             <hr className="sidebarHr" style={{ marginTop: '-8px' }}/>
             <ul className="sidebarFriendList">
             {friends.map((friend) => (

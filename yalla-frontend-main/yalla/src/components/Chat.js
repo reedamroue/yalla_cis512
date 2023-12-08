@@ -232,7 +232,7 @@ function Chat({usern}) {
     if (!showChat) {
         shown = (
             <div className="flex-center" >
-                <h1 className="text-xl">Main Room</h1>
+                <h1 className="text-xl" style={{fontWeight: 'bold'}}>Main Room</h1>
                 <div className="flex-line space-x-4">
                     <div>
                         You are <span className="text-blue-500">{username}</span>

@@ -59,12 +59,12 @@ export default function Event({event_id, username, name, date, location, start_t
         }
         setGoing(!amgoing);
       }
-  return (
+  return  (
     <div className="event">
-    <div className="eventWrapper">
+      <div className="eventWrapper" style={{ position: 'relative' }}>
         <div className="eventTop">
-            <h2>{name}</h2>
-        </div> 
+          <h2>{name}</h2>
+        </div>
         <div className="component-wrapper">
             <div className="date-event-picture">
                 <DateRange htmlColor="green"/>
@@ -84,12 +84,20 @@ export default function Event({event_id, username, name, date, location, start_t
             <div className="more-info-button">
                 {/* <Button className= { amgoing ? "btn btn-success" : "btn btn-primary"} onClick={toggleGoing}>{amgoing ? "Registered" : "Register"}</Button> */}
                 <Button 
-                className={`btn ${amgoing ? "btn-success" : "btn-primary"} rounded-circle`} 
-                onClick={toggleGoing}
-                style={{ width: '50px', height: '50px', padding: 0, lineHeight: '50px' }}
+                    className={`btn ${amgoing ? "btn-success" : "btn-primary"} rounded-circle`} 
+                    onClick={toggleGoing}
+                    style={{
+                    position: 'absolute',
+                    top: '30px',
+                    right: '30px',
+                    width: '50px',
+                    height: '50px',
+                    padding: 0,
+                    lineHeight: '50px'
+                    }}
                 >
-                {amgoing ? "✓" : "+"}
-                </Button>
+        {amgoing ? "✓" : "+"}
+      </Button>
 
             </div>     
         </div> 
@@ -102,10 +110,10 @@ export default function Event({event_id, username, name, date, location, start_t
                 <h5>{location}</h5>
             </div>     
         </div> 
-        <h5 className='descrip-title'>Description</h5>
+        <h5 className='descrip-title' style={{ fontWeight: 'bold' }}>Description</h5>
         <h5 className='description'>{description}</h5>
         <div className="component-wrappeer">
-            <h5 className='descrip-title'>Volunteer Requirements</h5>
+            <h5 className='descrip-title' style={{ fontWeight: 'bold' }}>Volunteer Requirements</h5>
             <h5 className='description'>{volunteer_req}</h5>
         </div>
     </div>

@@ -23,7 +23,7 @@ export default function EventsPage({username}) {
   return (
     <div  style={{ paddingTop: '70px' }}>
         <Container>
-            <h1 className="title">Upcoming Events</h1>
+            <h1 className="title" style={{ fontWeight: 'bold', marginTop: '10px', marginLeft: '30%'}}>Upcoming Events</h1>
             <ul id="events"></ul>
         </Container>
         {events.map((post) => (

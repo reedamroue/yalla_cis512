@@ -1,14 +1,59 @@
 function Comments({ comments }) {
-    return (
-        <div className="m-2">
-            {comments.map((comment) => (
-            <div className="bg-gray-100 m-1 p-2 rounded-lg" key={comment} style={{ backgroundColor: '#f3f3f3', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', fontSize: 'small' }}>
-                <div className="font-sm">{comment}</div>
-            </div>
+    const containerStyle = {
+        maxHeight: '150px',
+        overflowY: 'auto',
+        padding: '2px',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        width: '100%', 
+    };
 
-            ))}
+    const commentStyle = {
+        display: 'flex',
+        alignItems: 'flex-start',
+        marginBottom: '12px',
+        padding: '8px',
+        fontSize: 'small',
+    };
+
+    const profilePicStyle = {
+        width: '40px',
+        height: '40px',
+        borderRadius: '50%',
+        marginRight: '10px',
+    };
+
+    const nameStyle = {
+        fontWeight: 'bold',
+        display: 'block',
+    };
+
+    const textStyle = {
+        display: 'block',
+    };
+
+    return (
+        <div style={containerStyle}>
+            {comments.map((comment, index) => {
+                const [name, text] = comment.split(': ');
+                return (
+                    <div key={index} style={commentStyle}>
+                        <img src="https://media.istockphoto.com/photos/volunteers-standing-hands-picture-id1303107115?b=1&k=20&m=1303107115&s=170667a&w=0&h=Qy0CzAqe8H_wDTiE7-r6jMqfvNdt_HzK1Z9HDLETRrQ=" alt="Profile" style={profilePicStyle} />
+                        <div>
+                            <span style={nameStyle}>{name}</span>
+                            <span style={textStyle}>{text}</span>
+                        </div>
+                    </div>
+                );
+            })}
         </div>
-    )
+    );
 }
+
+
+
+
+
 
 export default Comments
