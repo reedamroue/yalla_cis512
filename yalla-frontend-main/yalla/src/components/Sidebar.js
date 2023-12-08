@@ -52,7 +52,7 @@ function Sidebar({username}) {
                     <span className="sidebarListItemText">My Posts</span>
                 </li>
                 <li className="sidebarListItem" key="3">
-                    <Assessment htmlColor="red" className="sidebarIcon"/>
+                    <Assessment htmlColor="red" className="sidebarIcon text-color2"/>
                     <span className="sidebarListItemText">Analytics</span>
                 </li>
                 <li className="sidebarListItem" key="4">

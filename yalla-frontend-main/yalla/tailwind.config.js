@@ -7,9 +7,12 @@ module.exports = {
       colors: {
         'figmaGray': '#E5E5E5',
         'test': '#ffffff',
-        'color1': '#00C8F8',
-        'color4': '#EA3EF7',
-        'color4Hover': '#E13EF7'
+        'color1': '#1EA1C0',
+        'color2': '#C03D1E',
+        'color2Hover': '#c01e1e',
+        'color3': '#50c01e',
+        'color4': '#22b8dc',
+        'color4Hover': '#7c1ec0'
       }
     },
   },
