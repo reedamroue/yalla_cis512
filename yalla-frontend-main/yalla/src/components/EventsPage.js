@@ -23,11 +23,11 @@ export default function EventsPage({username}) {
   return (
 <div style={{ paddingTop: '70px' }}>
   <Container>
-    <h1 className="title" style={{ fontWeight: 'bold', marginTop: '10px', textAlign: 'center' }}>Upcoming Events</h1>
+    <h1 className="text-center mt-4 font-bold">Upcoming Events</h1>
     <ul id="events"></ul>
   </Container>
   {events.map((post) => (
-    <div className="my-4" key={post[0].name}>
+    <div className="my-4 ml-10" key={post[0].name}>
       <Event name={post[0].name} date={post[0].date} location={post[0].address + ', ' + post[0].city + ', ' + post[0].state + ', ' + post[0].zipcode} 
       start_time={post[0].starttime}
       description={post[0].description} 
