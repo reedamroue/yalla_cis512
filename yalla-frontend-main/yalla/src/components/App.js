@@ -9,6 +9,7 @@ import { confirmAlert } from "react-confirm-alert"
 import "react-confirm-alert/src/react-confirm-alert.css"
 import Warning from './Warning';
 import yalla_logo from '../assets/yalla_logo.png';
+import new_yalla_logo from '../assets/new_yalla_logo.png';
 //import { getUserEvents } from '../../../server/dbOperations';
 // Pages accessible from this start page
 
@@ -159,7 +160,7 @@ function App() {
       <Container id="login-main-container" className="d-grid h-100">
         <Form id="sign-in-form" className="text-center w-100">
           <img className="mb-4 phlame-logo" 
-                src={yalla_logo} 
+                src={new_yalla_logo} 
                 alt="Bootstrap 5" 
                 style={{ display: 'block', marginLeft: '-100px'}}/>
           <h5 className='mb-3 fs 3'>The community for community service lovers</h5>
@@ -182,7 +183,7 @@ function App() {
       <Container id="login-main-container" className="d-grid h-100">
         <Form id="sign-in-form" className="text-center w-100">
         <img className="mb-4 phlame-logo" 
-                src={yalla_logo} 
+                src={new_yalla_logo} 
                 alt="Bootstrap 5" 
                 style={{ display: 'block', marginLeft: '-100px'}}/>
           <h5 className='mb-3 fs 3'>Login as a</h5>
@@ -211,7 +212,7 @@ function App() {
       <Container id="login-main-container" className="d-grid h-100">
         <Form id="sign-in-form" className="text-center w-100">
         <img className="mb-4 phlame-logo" 
-                src={yalla_logo} 
+                src={new_yalla_logo} 
                 alt="Bootstrap 5" 
                 style={{ display: 'block', marginLeft: '-100px'}}/>
           <h5 className='mb-3 fs 3'>Register as a </h5>
@@ -243,7 +244,7 @@ function App() {
         <Warning setUnsucc={setUnsucc}/>
       <Form id="sign-in-form" className="text-center w-100">
       <img className="mb-4 phlame-logo" 
-                src={yalla_logo} 
+                src={new_yalla_logo} 
                 alt="Bootstrap 5" 
                 style={{ display: 'block', marginLeft: '-100px'}}/>
         <h1 className='mb-3 fs 3'>Welcome Back!</h1>
@@ -264,7 +265,7 @@ function App() {
         <Container id="login-main-container" className="d-grid h-100">
           <Form id="sign-in-form" className="text-center w-100">
           <img className="mb-4 phlame-logo" 
-                src={yalla_logo} 
+                src={new_yalla_logo} 
                 alt="Bootstrap 5" 
                 style={{ display: 'block', marginLeft: '-100px'}}/>
             <h1 className='mb-3 fs 3'>Welcome Back!</h1>
@@ -305,7 +306,7 @@ function App() {
           <Warning setUnsucc={setUnsucc}/>
           <Form id="sign-in-form" className="text-center w-100">
           <img className="mb-4 phlame-logo" 
-                src={yalla_logo} 
+                src={new_yalla_logo} 
                 alt="Bootstrap 5" 
                 style={{ display: 'block', marginLeft: '-100px'}}/>
             <h1 className='mb-3 fs 3'>Welcome Back!</h1>
@@ -325,7 +326,7 @@ function App() {
         <Container id="login-main-container" className="d-grid h-100">
           <Form id="sign-in-form" className="text-center w-100">
           <img className="mb-4 phlame-logo" 
-                src={yalla_logo} 
+                src={new_yalla_logo} 
                 alt="Bootstrap 5" 
                 style={{ display: 'block', marginLeft: '-100px'}}/>
             <h1 className='mb-3 fs 3'>Welcome Back!</h1>

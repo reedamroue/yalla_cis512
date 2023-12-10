@@ -12,7 +12,7 @@ module.exports = {
         'color2Hover': '#c01e1e',
         'color3': '#50c01e',
         'color4': '#22b8dc',
-        'color4Hover': '#7c1ec0'
+        'color4Hover': '#229edc'
       }
     },
   },
