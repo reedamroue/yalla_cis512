@@ -67,13 +67,13 @@ function ProfileSub({currUser, isNgo}) {
                         text={`${currUser == null ? 0 : Math.round((currUser.events.length / currUser.goal) * 100)}%`}
                         styles={{
                             path: {
-                            stroke: `#EA3EF7`,
+                            stroke: `#22b8dc`,
                             },
                             trail: {
                             stroke: '#d6d6d6',
                             },
                             text: {
-                            fill: '#EA3EF7',
+                            fill: '#22b8dc',
                             },
                         }}
                         />
