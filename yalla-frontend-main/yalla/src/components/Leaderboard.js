@@ -2,6 +2,7 @@ import React, { useState, useEffect} from 'react'
 import LeaderboardProfiles from './LeaderboardProfiles';
 import '../assets/Leaderboard.css';
 import {Button} from "react-bootstrap";
+import reeda_yalla_pic from '../assets/reeda_yalla_pic.jpg';
 
 export default function Leaderboard() {
     //const SERVER_URL = "https://phlame-back.herokuapp.com"

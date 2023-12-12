@@ -45,6 +45,7 @@ function App() {
 
   // Define event handlers
   function handleSubmit(e) {
+    e.preventDefault();
     if (e.target === document.getElementById('logInBtn')) {
       goLogin();
     } else if (e.target === document.getElementById('registerBtn')) {
@@ -76,9 +77,10 @@ function App() {
     setPage(NGOREGISTER);
   }
 
-  async function goNGOHomePage() {
+  async function goNGOHomePage(e) {
     //setUsername(document.getElementById('sign-in-email').value)
     //setPassword(document.getElementById('sign-in-password').value)
+    e.preventDefault();
     await fetch(SERVER_URL + "/getngo/" + currUsername)
     .then(res => res.json())
     .then(res => {dbuser.current = res.data
@@ -115,7 +117,8 @@ function App() {
       }
     }
   }
-  async function goUserHome() {
+  async function goUserHome(e) {
+    e.preventDefault();
     //setUsername(document.getElementById('sign-in-email').value)
     //setPassword(document.getElementById('sign-in-password').value)
     await fetch(SERVER_URL + "/getuser/" + currUsername)

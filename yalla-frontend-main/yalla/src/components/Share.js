@@ -6,6 +6,7 @@ import 'reactjs-popup/dist/index.css';
 import Select from 'react-select';
 import { confirmAlert } from "react-confirm-alert"
 import "react-confirm-alert/src/react-confirm-alert.css"
+import reeda_yalla_pic from '../assets/reeda_yalla_pic.jpg'
 
 export default function Share({username}) {
     //const SERVER_URL = "https://phlame-back.herokuapp.com"
@@ -134,7 +135,7 @@ export default function Share({username}) {
         <div className="share bg-white p-4 rounded-lg shadow-md">
             <div className="shareWrapper">
                 <div className="shareTop flex items-center space-x-2">
-                    <img className="shareProfileImg rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt="" />
+                    <img className="shareProfileImg rounded-full" src={reeda_yalla_pic} alt="" />
                     <input placeholder="Share your last event!" className="shareInput flex-1"
                     onChange={e => 
                         {setMessage(e.target.value)

@@ -1,3 +1,4 @@
+import reeda_yalla_pic from '../assets/reeda_yalla_pic.jpg';
 function Comments({ comments }) {
     const containerStyle = {
         maxHeight: '150px',
@@ -39,7 +40,7 @@ function Comments({ comments }) {
                 const [name, text] = comment.split(': ');
                 return (
                     <div key={index} style={commentStyle}>
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt="Profile" style={profilePicStyle} />
+                        <img src={reeda_yalla_pic} alt="Profile" style={profilePicStyle} />
                         <div>
                             <span style={nameStyle}>{name}</span>
                             <span style={textStyle}>{text}</span>
