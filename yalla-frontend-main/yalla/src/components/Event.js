@@ -24,7 +24,7 @@ export default function Event({event_id, username, name, date, location, start_t
             })
             const confirmDia = () => {
                 confirmAlert({
-                    title: "Unregistered from Event :(",
+                    title: "Unregistered from event",
                     message: "You just unregistered from the event: " + name,
                     buttons: [
                         {
@@ -47,7 +47,7 @@ export default function Event({event_id, username, name, date, location, start_t
                 }),
             })
             confirmAlert({
-                title: "Registered for Event :)",
+                title: "Registered for event",
                 message: "You just registered for the event: " + name,
                 buttons: [
                     {
@@ -104,7 +104,7 @@ export default function Event({event_id, username, name, date, location, start_t
 
         <div className="component-wrapper">
             <div className="date-event-picture">
-                <LocationOn htmlColor='red'/>
+                <LocationOn className='text-color2'/>
             </div> 
             <div className="date-event">
                 <h5>{location}</h5>

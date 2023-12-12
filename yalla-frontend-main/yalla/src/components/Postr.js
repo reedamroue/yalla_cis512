@@ -82,7 +82,7 @@ function Postr({numberLikes, timestamp, message, username, comments_list, usersW
         } else {
             confirmAlert({
                 title: "You already liked this post!",
-                message: "There are many other posts to like :)",
+                message: "There are many other posts to like",
                 buttons: [
                     {
                         label: "Okay",
