@@ -42,7 +42,7 @@ const addUser = async (db, newUser, username) => {
         const newPost = new Object(); 
         newPost.comments = []; 
         newPost.likes = []; 
-        newPost.message = `${newUser._id} has created a Phlame account`
+        newPost.message = `${newUser._id} has created a Yalla account`
         addPost(db, newPost); 
         return result;
       } catch (err) {
