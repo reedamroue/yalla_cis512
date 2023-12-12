@@ -113,7 +113,7 @@ export default function AddFriend({currUser}) {
             onMouseOver={updatePeople}/>
             <span className="shareOptionText"
             onMouseOver={updatePeople}>Add Friend</span>
-            <Select options={allThem} 
+            <Select className="addFriend" options={allThem} 
             onChange={e => setFriend(e.value)}
             onMouseOver={updatePeople}/>
         </div>

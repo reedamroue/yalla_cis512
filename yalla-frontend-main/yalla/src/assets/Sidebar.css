@@ -1,3 +1,7 @@
+.addFriend {
+  margin-right: 10px;
+}
+
 .sidebar {
     flex: 3;
     height: calc(100vh - 50px);
