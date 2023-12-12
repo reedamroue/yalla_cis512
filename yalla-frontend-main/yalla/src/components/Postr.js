@@ -209,9 +209,9 @@ function Postr({numberLikes, timestamp, message, username, comments_list, usersW
                     {">"}
                 </button>
             </div>
-            <div className="flex-line space-x-4 " style={{ marginTop: '5px' }}>
+            <div className="flex space-x-4 mt-4">
                 <LikeButton onClick={() => likeClicked()} disabled={isLiked}></LikeButton>
-                <div>{numLikes} people liked this.</div>
+                <div className="mt-2">{numLikes} people liked this.</div>
             </div>
         </div>
     )
