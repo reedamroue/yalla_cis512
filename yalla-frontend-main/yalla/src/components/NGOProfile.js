@@ -3,6 +3,10 @@ import '../assets/Login.css';
 import ProfileSub from './ProfileSub';
 import '../assets/Profile.css';
 
+import reeda_yalla_pic from '../assets/reeda_yalla_pic.jpg';
+import vikram_yalla_pic from '../assets/vikram_yalla_pic.jpg';
+import ali_yalla_pic from '../assets/ali_yalla_pic.jpg';
+
 const NGOProfile = ({username}) => {
 
     //const SERVER_URL = "https://phlame-back.herokuapp.com"
@@ -42,6 +46,9 @@ const NGOProfile = ({username}) => {
                 <div>
                     <img className="rounded-circle" alt="" style={{width:"250px",height:"250px",borderRadius:"80px"}}
                     src={currUser == null ? "" : isNGO ? "https://us.123rf.com/450wm/backwoodsicon/backwoodsicon2008/backwoodsicon200800034/156821062-ngo-organization-black-glyph-icon-non-profit-community-pictogram-for-web-page-mobile-app-promo-.jpg?ver=6" : 
+                    currUser._id === 'Reeda' ? reeda_yalla_pic :
+                    currUser._id === 'Vikram' ? vikram_yalla_pic :
+                    currUser._id === 'Ali' ? ali_yalla_pic :
                     "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"}
                     />
                 </div>
